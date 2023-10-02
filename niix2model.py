@@ -1,8 +1,7 @@
 import os
 import re
-from PIL import Image
 import requests
-import tqdm
+from tqdm import tqdm
 
 
 def niix2model(niix_dir, out_dir):
