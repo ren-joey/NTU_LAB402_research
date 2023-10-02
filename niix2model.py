@@ -35,14 +35,19 @@ def niix2model(niix_dir, out_dir):
                     res = requests.post(url, files=form)
 
                     if res.status_code == 200:
-                        id = res.json()['prediction']['id']
+                        res = res.json()
+                        id = res['prediction']['id']
+                        z = res['prediction']['slice_z'] if 'slice_z' in res['prediction'] else 'inf'
+
                         for direction_name in direction_name_list:
                             seg = requests.get(f'http://localhost:5000/uploads/{filename}_{direction_name}-{id}.jpg')
-                            out_fullpath = os.path.join(out_dir, patient)
-                            os.makedirs(out_fullpath, exist_ok=True)
-                            img = open(f'{out_fullpath}/{filename}_{direction_name}-{id}.jpg', 'wb')
-                            img.write(seg.content)
-                            img.close()
+
+                            if seg.status_code == 200:
+                                out_fullpath = os.path.join(out_dir, patient)
+                                os.makedirs(out_fullpath, exist_ok=True)
+                                img = open(f'{out_fullpath}/{filename}_{direction_name}_slicez-{z}.jpg', 'wb')
+                                img.write(seg.content)
+                                img.close()
 
 
 
