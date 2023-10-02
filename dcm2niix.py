@@ -1,9 +1,9 @@
 import os
 import re
-import shutil
+# import shutil
 from os import path
-import pydicom
-import csv
+# import pydicom
+# import csv
 
 from utils import delete_dir
 
@@ -14,7 +14,7 @@ def dcm2niix(dcm_dir, out_dir):
 
     for dir_idx, (dir_path, dir_names, file_names) in enumerate(os.walk(dcm_dir)):
 
-        regex = '/P\d{12}/AC\d{7}'
+        regex = '[\\\/]P\d{12}[\\\/]AC\d{7}'
         res = re.search(regex, dir_path)
 
         if res is not None:
@@ -26,11 +26,15 @@ def dcm2niix(dcm_dir, out_dir):
 
             # delete_dir(niix_out_dir)
             os.makedirs(niix_out_dir, exist_ok=True)
-            os.system(f'dcm2niix -o {niix_out_dir} {dir_path}')
+            # os.system(f'dcm2niix -o {niix_out_dir} {dir_path}')
+            command = f'C:\\Users\\axe09\\Desktop\\dcm2niix.exe -o {niix_out_dir} {dir_path}'
+            os.system(command)
 
     print(anamoly_dir_list)
 
 if __name__ == '__main__':
-    dcm_dir = '/Volumes/Transcend/matched'
-    out_dir = '/Users/joey_ren/Desktop/MS/Lab/Research/codes/niix'
+    # dcm_dir = '/Volumes/Transcend/matched'
+    dcm_dir = 'D:\\matched'
+    # out_dir = '/Users/joey_ren/Desktop/MS/Lab/Research/codes/niix'
+    out_dir = 'C:\\Users\\axe09\\Desktop\\NTU_LAB402_research_code\\niix'
     dcm2niix(dcm_dir, out_dir)
