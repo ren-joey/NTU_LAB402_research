@@ -6,9 +6,6 @@ import shutil
 # import asyncio
 # from aiohttp import ClientSession, MultipartWriter
 
-dcm2niix_path = 'C:\\Users\\axe09\\Desktop\\dcm2niix.exe'
-sarcopenia_server_url = 'http://localhost:5000/predict'
-
 
 # TODO:
 # Must know how the python async system work
@@ -94,8 +91,11 @@ def dcm_run_and_del(
                                     img.close()
 
 if __name__ == '__main__':
+    dcm2niix_path = '"D:\\Users\\tsuyi\\Desktop\\dcm2niix.exe"'
+    sarcopenia_server_url = 'http://localhost:5000/predict'
+
     dcm_run_and_del(
-        'E:\\RTMets_datasets',
-        'E:\\temp',
+        'G:\\RTMets_datasets',
+        'G:\\temp',
         dcm2niix_path, sarcopenia_server_url
     )
