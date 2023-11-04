@@ -15,7 +15,8 @@ def dcm_run_and_del(
     in_dir,
     out_dir,
     dcm2niix_path,
-    sarcopenia_server_url
+    sarcopenia_server_url,
+    pass_patients=[]
 ):
     in_dir = os.path.join(in_dir)
     out_dir = os.path.join(out_dir)
@@ -43,6 +44,11 @@ def dcm_run_and_del(
         # make sure that directory is a patient folder (named AC\d{7})
         if res is not None:
             patient = res.group()
+
+            if patient in pass_patients:
+                print(f'[PASS] patient:{patient}')
+                continue
+
             nii_out_dir = os.path.normpath(out_dir + patient + '_niix')
             pred_out_dir = os.path.normpath(out_dir + patient)
 
@@ -77,6 +83,9 @@ def dcm_run_and_del(
 
                     if res.status_code == 200:
                         res = res.json()
+                        if res == 1:
+                            continue
+
                         id = res['prediction']['id']
                         z = res['prediction']['slice_z'] if 'slice_z' in res['prediction'] else 'inf'
 
@@ -90,12 +99,32 @@ def dcm_run_and_del(
                                     img.write(seg.content)
                                     img.close()
 
+
+def detect_completed_patients(out_dir):
+    patient_regex = '[\\\/]P\d{12}[\\\/]AC\d{7}'
+    out_dir = os.path.join(out_dir)
+    pass_patients = []
+
+    for dir_path, dir_names, file_names in os.walk(out_dir):
+        res = re.search(patient_regex, dir_path)
+
+        if res is not None:
+            pass_patients.append(res.group())
+
+    return pass_patients
+
+
 if __name__ == '__main__':
     dcm2niix_path = '"D:\\Users\\tsuyi\\Desktop\\dcm2niix.exe"'
     sarcopenia_server_url = 'http://localhost:5000/predict'
+    out_dir = 'G:\\temp'
+
+    pass_patients = detect_completed_patients(out_dir)
 
     dcm_run_and_del(
         'G:\\RTMets_datasets',
-        'G:\\temp',
-        dcm2niix_path, sarcopenia_server_url
+        out_dir,
+        dcm2niix_path,
+        sarcopenia_server_url,
+        pass_patients
     )
