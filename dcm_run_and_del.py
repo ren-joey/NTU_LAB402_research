@@ -18,7 +18,7 @@ def dcm_run_and_del(
     os.makedirs(out_dir, exist_ok=True)
 
     # some function's constant
-    direction_name_list = ['seg', 'frontal']
+    direction_name_list = ['seg', 'frontal', 'slice', 'pred']
     patient_regex = '[\\\/]P\d{12}[\\\/]AC\d{7}'
     nii_ext_regex = '^(?!\.).*\.nii$'
 
@@ -46,9 +46,6 @@ def dcm_run_and_del(
 
                 # identify niix files by file extension
                 is_nii = re.fullmatch(nii_ext_regex, nii_file_names) is not None
-
-                ## TODO:
-                ## sarcopenia-ai 那邊還要改成紫色飽滿
 
                 # if the file extension matched
                 if is_nii:
