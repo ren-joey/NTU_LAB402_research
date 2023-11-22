@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 import shutil
 from PIL import Image
+import cv2
 
 
 def dataset_prepare(work_dir, out_dir):
@@ -28,19 +29,17 @@ def dataset_prepare(work_dir, out_dir):
                 name = y_file_path.name.split('.png')[0]
                 names = name.split('_pred_')
 
-                shutil.copyfile(
-                    y_file_path,
-                    Path(ct_ydata, f'{idx}.png')
-                )
-                shutil.copyfile(
-                    y_file_path,
-                    Path(grouping_ydata, f'{idx}.png')
-                )
+                y_img = Image.open(y_file_path)
+                y_img = y_img.transpose(Image.FLIP_TOP_BOTTOM)
+                y_img.save(Path(ct_ydata, f'{idx}.png'))
+                y_img.save(Path(grouping_ydata, f'{idx}.png'))
 
                 grouping_xdata_img = Image.open(Path(dir_path, f'{name}.jpg'))
+                grouping_xdata_img = grouping_xdata_img.transpose(Image.FLIP_TOP_BOTTOM)
                 grouping_xdata_img.save(Path(grouping_xdata, f'{idx}.png'))
 
                 ct_xdata_img = Image.open(Path(dir_path, f'{names[0]}_slice_{names[1]}.jpg'))
+                ct_xdata_img = ct_xdata_img.transpose(Image.FLIP_TOP_BOTTOM)
                 ct_xdata_img.save(Path(ct_xdata, f'{idx}.png'))
 
                 idx += 1
