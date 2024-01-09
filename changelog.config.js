@@ -3,11 +3,14 @@ module.exports = {
     format: '{type}{scope}: {emoji}{subject}',
     list: [
         'feat',
+        'upt',
         'tidy',
+        'asset',
         'fix',
         'style',
         'docs',
         'cfg',
+        'init',
         'refactor',
         'perf',
         'test',
@@ -26,15 +29,20 @@ module.exports = {
             emoji: '🌱',
             value: 'init'
         },
-        update: {
+        upt: {
             description: 'Feature updates',
             emoji: '♻️',
             value: 'upt'
         },
         tidy: {
             description: 'Code organization',
-            emoji: '🧹',
+            emoji: '🫧',
             value: 'tidy'
+        },
+        asset: {
+            description: 'Asset addition',
+            emoji: '💵',
+            value: 'asset'
         },
         cfg: {
             description: 'Configuration changes',
