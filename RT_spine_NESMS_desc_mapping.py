@@ -8,6 +8,24 @@ from PIL import Image
 import numpy as np
 
 spread_speed_map = [
+    # quick
+    [
+        "Hormone dependent breast cancer",
+        "Hormone dependent prostate cancer",
+        "Malignant lymphoma",
+        "Malignant myeloma",
+        "Thyroid cancer"
+    ],
+    # median
+    [
+        "Non-small cell lung cancer with molecularly targeted therapy",
+        "Hormone independent breast cancer",
+        "Hormone independent prostate cancer",
+        "Renal cell carcinoma",
+        "Sarcoma",
+        "Other gynecological cancer",
+        "Others"
+    ],
     # slow
     [
         "Other lung cancer",
@@ -22,24 +40,6 @@ spread_speed_map = [
         "Gallbladder cancer",
         "Cervical cancer",
         "Unknown origin"
-    ],
-    # median
-    [
-        "Non-small cell lung cancer with molecularly targeted therapy",
-        "Hormone independent breast cancer",
-        "Hormone independent prostate cancer",
-        "Renal cell carcinoma",
-        "Sarcoma",
-        "Other gynecological cancer",
-        "Others"
-    ],
-    # quick
-    [
-        "Hormone dependent breast cancer",
-        "Hormone dependent prostate cancer",
-        "Malignant lymphoma",
-        "Malignant myeloma",
-        "Thyroid cancer"
     ]
 ]
 
