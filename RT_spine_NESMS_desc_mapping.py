@@ -52,20 +52,22 @@ def RT_spine_NESMS_desc_mapping(out):
         os.remove(csv_path)
     f = open(csv_path, 'w', newline='')
     writer = csv.writer(f)
-    writer.writerow(['SORG_cancer_classification', 'speed_level'])
+    writer.writerow(['SORG_cancer_classification', 'speed_level', 'one_hot_encode'])
 
     res = []
     for sentence in data:
         matched = -1
+        one_hot_encode = -1
         for desc in sentence.split(','):
             desc = desc.strip()
             for level, g in enumerate(spread_speed_map):
                 if desc in g:
                     matched = level
+                    one_hot_encode = (level + 1) * (g.index(desc) + 1)
                     break
             if matched != -1:
                 break
-        res.append([sentence, matched + 1])
+        res.append([sentence, matched + 1, one_hot_encode])
     writer.writerows(res)
     f.close()
     
