@@ -2,3 +2,4 @@
 config.py
 /niix*
 /ydata
+/datasets/4_channels/*
