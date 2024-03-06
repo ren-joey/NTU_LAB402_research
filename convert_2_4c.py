@@ -5,6 +5,7 @@ from os import listdir
 from os.path import splitext, isfile, join
 from PIL import Image
 import torch
+import torchvision.transforms as transforms
 
 def load_image(filename):
     ext = splitext(filename)[1]
@@ -20,8 +21,15 @@ def convert_2_4c(
     valid_img_path,
     train_mask_path,
     valid_mask_path,
-    save_path
+    save_path,
+    mode='md' # md | sm
 ):
+    Path(save_path).mkdir(parents=True, exist_ok=True)
+
+    tfm = transforms.Compose([
+        transforms.Resize((200, 200))
+    ])
+
     train_img_path = Path(train_img_path)
     valid_img_path = Path(valid_img_path)
     train_mask_path = Path(train_mask_path)
@@ -42,8 +50,16 @@ def convert_2_4c(
         assert len(mask_file) == 1
         assert len(img_file) == 1
 
-        mask = np.array(load_image(mask_file[0]))
-        img = np.array(load_image(img_file[0])).tolist()
+        mask = load_image(mask_file[0])
+        img = load_image(img_file[0])
+
+        if mode == 'sm':
+            mask = tfm(mask)
+            img = tfm(img)
+
+        mask = np.array(mask)
+        img = np.array(img).tolist()
+
         for y, rows in enumerate(img):
             for x, p in enumerate(rows):
                 img[y][x] = [p]
@@ -73,10 +89,12 @@ def convert_2_4c(
 
 
 if __name__ == '__main__':
+    mode = 'sm'
     convert_2_4c(
         train_img_path='/Users/joey_ren/Desktop/MS/Lab402/research/code/datasets/muscle_group_segment/train/xdata',
         valid_img_path='/Users/joey_ren/Desktop/MS/Lab402/research/code/datasets/muscle_group_segment/validation/xdata',
         train_mask_path='/Users/joey_ren/Desktop/MS/Lab402/research/code/datasets/muscle_group_segment/train/ydata',
         valid_mask_path='/Users/joey_ren/Desktop/MS/Lab402/research/code/datasets/muscle_group_segment/validation/ydata',
-        save_path='/Users/joey_ren/Desktop/MS/Lab402/research/code/datasets/4_channels'
+        save_path='/Users/joey_ren/Desktop/MS/Lab402/research/code/datasets/4_channels_' + mode,
+        mode=mode
     )
