@@ -76,8 +76,16 @@ def convert_2_4c(
         assert len(mask_file) == 1
         assert len(img_file) == 1
 
-        mask = np.array(load_image(mask_file[0]))
-        img = np.array(load_image(img_file[0])).tolist()
+        mask = load_image(mask_file[0])
+        img = load_image(img_file[0])
+
+        if mode == 'sm':
+            mask = tfm(mask)
+            img = tfm(img)
+
+        mask = np.array(mask)
+        img = np.array(img).tolist()
+
         for y, rows in enumerate(img):
             for x, p in enumerate(rows):
                 img[y][x] = [p]
