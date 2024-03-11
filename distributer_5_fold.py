@@ -129,18 +129,15 @@ def folds_distributer(data, folds=5, sampling="over-sampling"):
             target = 0 if sub < i + 3 else 1 if sub == i + 3 else 2
             sub = sub % folds
             p_size, n_size = len(p_fold[sub]), len(n_fold[sub])
-            under_p_size, under_n_size = len(under_p_fold[sub]), len(under_n_fold[sub])
 
             if target == 0:
+                # If target is training set,
+                # positive and negative data size should be the same
                 if sampling is 'over-sampling':
                     if p_size - n_size > 0:
                         new_fold = copy.deepcopy(n_fold[sub])
                         for i3 in range(n_size, p_size):
                             new_fold.append(new_fold[i3 % n_size])
-
-                        # unique_test(p_fold[sub], 'p>n, sub{}'.format(sub))
-                        # unique_test(new_fold, 'p>n, sub{}'.format(sub))
-                        # print('n_fold size: {}, p_fold size: {}'.format(len(p_fold[sub]), len(new_fold)))
 
                         tvt[target] += new_fold
                         tvt[target] += p_fold[sub]
@@ -149,33 +146,20 @@ def folds_distributer(data, folds=5, sampling="over-sampling"):
                         for i3 in range(p_size, n_size):
                             new_fold.append(new_fold[i3 % p_size])
 
-                        # unique_test(p_fold[sub], 'n>p, sub{}'.format(sub))
-                        # unique_test(new_fold, 'n>p, sub{}'.format(sub))
-                        # print('n_fold size: {}, p_fold size: {}'.format(len(new_fold), len(n_fold[sub])))
-
                         tvt[target] += new_fold
                         tvt[target] += n_fold[sub]
                     else:
-                        # print('??????????????????????????????')
                         tvt[target] += p_fold[sub]
                         tvt[target] += n_fold[sub]
                 elif sampling is 'under-sampling':
                     tvt[target] += under_p_fold[sub]
                     tvt[target] += under_n_fold[sub]
             else:
-                # print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
                 tvt[target] += p_fold[sub] + n_fold[sub]
 
-        # unique_test(tvt[0], 'training')
-        # unique_test(tvt[1], 'val')
-        # unique_test(tvt[2], 'test')
         distributions[i] = tvt
 
     return distributions
-    # pos_count, neg_count = len(positives)
-
-    # dis = np.reshape(data, (5, 182))
-    # print(dis)
 
 def set_idx_to_name(id):
     if id == 0:
@@ -229,7 +213,7 @@ def days_distributer(data_path, folds=5, sampling="over-sampling"):
     res = pd.read_csv(data_path)
     data = res.values
     data = np.array(data, dtype=np.int32)
-    header = res.columns.to_numpy()
+    # header = res.columns.to_numpy()
 
     x_data, y_42d, y_90d, y_365d = data[:, :-3], data[:, -3], data[:, -2], data[:, -1]
 
@@ -267,7 +251,6 @@ if __name__ == "__main__":
     clinical_data_path = "/Users/joey_ren/Desktop/MS/Lab402/research/code/datasets/RT_spine_NESMS_info/all.csv"
     distributions = days_distributer(clinical_data_path, folds, sampling)
     simple_distributions = extract_ids_only(distributions)
-    # id_distributions = list(zip(*id_distributions[::-1]))
 
     with open('./datasets/train_val_test_split_{}.csv'.format(sampling), 'w') as fp:
         writer = csv.writer(fp)
