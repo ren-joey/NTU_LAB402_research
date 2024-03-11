@@ -10,7 +10,7 @@ def uniques_and_counts(data, name='anonymous'):
     # print(list(zip(uniques, counts)))
     return uniques, counts
 
-def distribution_test(data):
+def distribution_test(data, sampling='over-sampling'):
     for each in data:
         train = np.array(each[0])
         val = np.array(each[1])
@@ -25,11 +25,14 @@ def distribution_test(data):
         train_id_uniques, train_id_counts = uniques_and_counts(train_id, 'train id')
         _, train_label_counts = uniques_and_counts(train_label, 'train label')
         assert train_label_counts[0] == train_label_counts[1]
+        if sampling is 'under-sampling':
+            assert np.sum(train_id_counts) == len(train_id_counts)
         res = np.unique(train_id_counts, return_counts=True)
         print(list(zip(res[0], res[1])))
 
         val_id_uniques, val_id_counts = uniques_and_counts(val_id, 'val id')
         _, val_label_counts = uniques_and_counts(val_label, 'val label')
+        print(val_label_counts[0], val_label_counts[1])
         assert val_label_counts[0] != val_label_counts[1]
         assert np.sum(val_id_counts) == val_id_counts.shape[0]
 
@@ -38,7 +41,8 @@ def distribution_test(data):
         assert test_label_counts[0] != test_label_counts[1]
         assert np.sum(test_id_counts) == test_id_counts.shape[0]
 
-        assert train_id_uniques.shape[0] + val_id_uniques.shape[0] + test_id_uniques.shape[0] == 911
+        if sampling is 'over-sampling':
+            assert train_id_uniques.shape[0] + val_id_uniques.shape[0] + test_id_uniques.shape[0] == 911
 
 
 def unique_test(data, name='anonymous'):
@@ -88,6 +92,8 @@ def folds_distributer(data, folds=5, sampling="over-sampling"):
 
     p_fold = [[], [], [], [], []]
     n_fold = [[], [], [], [], []]
+    under_p_fold = [[], [], [], [], []]
+    under_n_fold = [[], [], [], [], []]
 
     if positives.shape[0] > negatives.shape[0]:
         for i, item in enumerate(positives):
@@ -97,6 +103,11 @@ def folds_distributer(data, folds=5, sampling="over-sampling"):
 
             if i < negatives.shape[0]:
                 n_fold[fold].append(negatives[i])
+        for i, item in enumerate(negatives):
+            fold = i % folds
+
+            under_n_fold[fold].append(item)
+            under_p_fold[fold].append(positives[i])
     else:
         for i, item in enumerate(negatives):
             fold = i % folds
@@ -105,6 +116,11 @@ def folds_distributer(data, folds=5, sampling="over-sampling"):
 
             if i < positives.shape[0]:
                 p_fold[fold].append(positives[i])
+        for i, item in enumerate(positives):
+            fold = i % folds
+
+            under_p_fold[fold].append(item)
+            under_n_fold[fold].append(negatives[i])
 
     for i in range(folds):
         tvt = [[], [], []] # train, val, test
@@ -113,34 +129,39 @@ def folds_distributer(data, folds=5, sampling="over-sampling"):
             target = 0 if sub < i + 3 else 1 if sub == i + 3 else 2
             sub = sub % folds
             p_size, n_size = len(p_fold[sub]), len(n_fold[sub])
+            under_p_size, under_n_size = len(under_p_fold[sub]), len(under_n_fold[sub])
 
             if target == 0:
-                if p_size - n_size > 0:
-                    new_fold = copy.deepcopy(n_fold[sub])
-                    for i3 in range(n_size, p_size):
-                        new_fold.append(new_fold[i3 % n_size])
+                if sampling is 'over-sampling':
+                    if p_size - n_size > 0:
+                        new_fold = copy.deepcopy(n_fold[sub])
+                        for i3 in range(n_size, p_size):
+                            new_fold.append(new_fold[i3 % n_size])
 
-                    # unique_test(p_fold[sub], 'p>n, sub{}'.format(sub))
-                    # unique_test(new_fold, 'p>n, sub{}'.format(sub))
-                    # print('n_fold size: {}, p_fold size: {}'.format(len(p_fold[sub]), len(new_fold)))
+                        # unique_test(p_fold[sub], 'p>n, sub{}'.format(sub))
+                        # unique_test(new_fold, 'p>n, sub{}'.format(sub))
+                        # print('n_fold size: {}, p_fold size: {}'.format(len(p_fold[sub]), len(new_fold)))
 
-                    tvt[target] += new_fold
-                    tvt[target] += p_fold[sub]
-                elif p_size - n_size < 0:
-                    new_fold = copy.deepcopy(p_fold[sub])
-                    for i3 in range(p_size, n_size):
-                        new_fold.append(new_fold[i3 % p_size])
+                        tvt[target] += new_fold
+                        tvt[target] += p_fold[sub]
+                    elif p_size - n_size < 0:
+                        new_fold = copy.deepcopy(p_fold[sub])
+                        for i3 in range(p_size, n_size):
+                            new_fold.append(new_fold[i3 % p_size])
 
-                    # unique_test(p_fold[sub], 'n>p, sub{}'.format(sub))
-                    # unique_test(new_fold, 'n>p, sub{}'.format(sub))
-                    # print('n_fold size: {}, p_fold size: {}'.format(len(new_fold), len(n_fold[sub])))
+                        # unique_test(p_fold[sub], 'n>p, sub{}'.format(sub))
+                        # unique_test(new_fold, 'n>p, sub{}'.format(sub))
+                        # print('n_fold size: {}, p_fold size: {}'.format(len(new_fold), len(n_fold[sub])))
 
-                    tvt[target] += new_fold
-                    tvt[target] += n_fold[sub]
-                else:
-                    # print('??????????????????????????????')
-                    tvt[target] += p_fold[sub]
-                    tvt[target] += n_fold[sub]
+                        tvt[target] += new_fold
+                        tvt[target] += n_fold[sub]
+                    else:
+                        # print('??????????????????????????????')
+                        tvt[target] += p_fold[sub]
+                        tvt[target] += n_fold[sub]
+                elif sampling is 'under-sampling':
+                    tvt[target] += under_p_fold[sub]
+                    tvt[target] += under_n_fold[sub]
             else:
                 # print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
                 tvt[target] += p_fold[sub] + n_fold[sub]
@@ -207,22 +228,22 @@ def days_distributer(data_path, folds=5, sampling="over-sampling"):
 
     res = pd.read_csv(data_path)
     data = res.values
-    data = np.array(data)
+    data = np.array(data, dtype=np.int32)
     header = res.columns.to_numpy()
 
     x_data, y_42d, y_90d, y_365d = data[:, :-3], data[:, -3], data[:, -2], data[:, -1]
 
     print('42d')
     distributions['42d'] = folds_distributer(y_42d, folds, sampling)
-    distribution_test(distributions['42d'])
+    distribution_test(distributions['42d'], sampling)
 
     print('90d')
     distributions['90d'] = folds_distributer(y_90d, folds, sampling)
-    distribution_test(distributions['90d'])
+    distribution_test(distributions['90d'], sampling)
 
     print('365d')
     distributions['365d'] = folds_distributer(y_365d, folds, sampling)
-    distribution_test(distributions['365d'])
+    distribution_test(distributions['365d'], sampling)
 
     return distributions
 
@@ -241,13 +262,15 @@ def csv_tester(path, origin):
 
 if __name__ == "__main__":
     folds = 5
-    sampling = 'over-sampling'
+    # sampling = 'over-sampling'
+    sampling = 'under-sampling'
     clinical_data_path = "/Users/joey_ren/Desktop/MS/Lab402/research/code/datasets/RT_spine_NESMS_info/all.csv"
     distributions = days_distributer(clinical_data_path, folds, sampling)
-    id_distributions = extract_ids_only(distributions)
+    simple_distributions = extract_ids_only(distributions)
     # id_distributions = list(zip(*id_distributions[::-1]))
-    with open('./datasets/train_val_test_split.csv', 'w') as fp:
+
+    with open('./datasets/train_val_test_split_{}.csv'.format(sampling), 'w') as fp:
         writer = csv.writer(fp)
-        writer.writerows(id_distributions)
+        writer.writerows(simple_distributions)
         fp.close()
-    csv_tester('./datasets/train_val_test_split.csv', id_distributions)
+    csv_tester('./datasets/train_val_test_split.csv', simple_distributions)
