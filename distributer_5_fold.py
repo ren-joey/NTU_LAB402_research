@@ -24,8 +24,9 @@ def distribution_test(data, sampling='over-sampling'):
 
         train_id_uniques, train_id_counts = uniques_and_counts(train_id, 'train id')
         _, train_label_counts = uniques_and_counts(train_label, 'train label')
-        assert train_label_counts[0] == train_label_counts[1]
-        if sampling is 'under-sampling':
+        if sampling != 'no-sampling':
+            assert train_label_counts[0] == train_label_counts[1]
+        if sampling == 'under-sampling':
             assert np.sum(train_id_counts) == len(train_id_counts)
         res = np.unique(train_id_counts, return_counts=True)
         print(list(zip(res[0], res[1])))
@@ -41,7 +42,7 @@ def distribution_test(data, sampling='over-sampling'):
         assert test_label_counts[0] != test_label_counts[1]
         assert np.sum(test_id_counts) == test_id_counts.shape[0]
 
-        if sampling is 'over-sampling':
+        if sampling != 'under-sampling':
             assert train_id_uniques.shape[0] + val_id_uniques.shape[0] + test_id_uniques.shape[0] == 911
 
 
@@ -61,9 +62,9 @@ def unique_test(data, name='anonymous'):
     print(label_map)
     print('===========================')
 
-def folds_distributer(data, folds=5, sampling="over-sampling"):
+def folds_distributer(data, folds=5, sampling='over-sampling'):
     # over-sampling | under-sampling
-    if sampling not in ("over-sampling", "under-sampling"):
+    if sampling not in ('over-sampling', 'under-sampling', 'no-sampling'):
         raise
 
     distributions = [
@@ -133,7 +134,7 @@ def folds_distributer(data, folds=5, sampling="over-sampling"):
             if target == 0:
                 # If target is training set,
                 # positive and negative data size should be the same
-                if sampling is 'over-sampling':
+                if sampling == 'over-sampling':
                     if p_size - n_size > 0:
                         new_fold = copy.deepcopy(n_fold[sub])
                         for i3 in range(n_size, p_size):
@@ -151,9 +152,12 @@ def folds_distributer(data, folds=5, sampling="over-sampling"):
                     else:
                         tvt[target] += p_fold[sub]
                         tvt[target] += n_fold[sub]
-                elif sampling is 'under-sampling':
+                elif sampling == 'under-sampling':
                     tvt[target] += under_p_fold[sub]
                     tvt[target] += under_n_fold[sub]
+                elif sampling == 'no-sampling':
+                    tvt[target] += p_fold[sub]
+                    tvt[target] += n_fold[sub]
             else:
                 tvt[target] += p_fold[sub] + n_fold[sub]
 
@@ -203,7 +207,7 @@ def extract_ids_only(distributions):
     return simple_list
 
 
-def days_distributer(data_path, folds=5, sampling="over-sampling"):
+def days_distributer(data_path, folds=5, sampling='over-sampling'):
     distributions = {
         "42d": [],
         "90d": [],
@@ -247,7 +251,8 @@ def csv_tester(path, origin):
 if __name__ == "__main__":
     folds = 5
     # sampling = 'over-sampling'
-    sampling = 'under-sampling'
+    # sampling = 'under-sampling'
+    sampling = 'no-sampling'
     clinical_data_path = "/Users/joey_ren/Desktop/MS/Lab402/research/code/datasets/RT_spine_NESMS_info/all.csv"
     distributions = days_distributer(clinical_data_path, folds, sampling)
     simple_distributions = extract_ids_only(distributions)
