@@ -6,6 +6,7 @@ from pathlib import Path
 from PIL import Image
 from radiomics import firstorder, getTestCase, glcm, glrlm, glszm, imageoperations, shape, shape2D
 import SimpleITK as sitk
+import matplotlib.pyplot as plt
 
 settings = {
     'binWidth': 25,
@@ -36,10 +37,8 @@ def some_test():
     raise
 
 def ct_radiomics(in_path, out_path, id_range):
-    in_path = [
-        Path(in_path[0]),
-        Path(in_path[1])
-    ]
+    in_path = [Path(path) for path in in_path]
+
     csv_path = Path(out_path, 'radiomics.csv')
     if csv_path.is_file():
         # confirm = input('remove current file (Y/N)?')
@@ -54,12 +53,19 @@ def ct_radiomics(in_path, out_path, id_range):
 
         img_paths = [
             f'{in_path[0]}/{id}.png',
-            f'{in_path[1]}/{id}.png'
+            f'{in_path[1]}/{id}.png',
+            f'{in_path[2]}/{id}_diode.png'
         ]
+        # trunk_mask = np.array(Image.open(img_paths[2])) // 255 * 4
+
         o_mask = np.array(Image.open(img_paths[1]))
         mask = np.zeros(o_mask.shape[:2], dtype=np.int64)
         for i, c in enumerate([[0, 0, 0], [255, 0, 0], [0, 255, 0], [0, 0, 255]]):
-            mask[(o_mask == c).all(-1)] = i
+            mask[(o_mask == c).all(-1)] = int(i > 0)
+
+        # mask[(mask == 0) * (trunk_mask == 4)] = 4
+        print(np.unique(mask, return_counts=True))
+
         image = sitk.ReadImage(img_paths[0])
         mask = sitk.GetImageFromArray(mask)
         each_row_data = [id]
@@ -243,7 +249,8 @@ def ct_radiomics(in_path, out_path, id_range):
 if __name__ == '__main__':
     in_path = [
         '/Users/joey_ren/Desktop/MS/Lab402/research/code/datasets/muscle_group_segment/all/xdata',
-        '/Users/joey_ren/Desktop/MS/Lab402/research/code/datasets/muscle_group_segment/all/ydata'
+        '/Users/joey_ren/Desktop/MS/Lab402/research/code/datasets/muscle_group_segment/all/ydata',
+        '/Users/joey_ren/Desktop/MS/Lab402/research/code/datasets/muscle_group_segment/all/subtract'
         # '/Users/joey_ren/Desktop/MS/Lab402/research/code/datasets/muscle_segment/all/ydata'
     ]
     out_path = '/Users/joey_ren/Desktop/MS/Lab402/research/code/datasets/RT_spine_NESMS_info'
