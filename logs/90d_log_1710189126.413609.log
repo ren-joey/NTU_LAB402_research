@@ -1,0 +1,1345 @@
+INFO:root:device = cuda
+INFO:root:pred_days = 90
+WARNING:root:weights = [1, 2]
+INFO:root:data sampling method: no-sampling
+INFO:root:training set size: 819
+INFO:root:data sampling method: no-sampling
+INFO:root:val set size: 92
+INFO:root:[1/5][0/100] loss: 0.028235427
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5799
+INFO:root:[validation] The current loss: 0.23791513, acc*auc: 0.3719
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[1/5][1/100] loss: 0.028214506
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5716
+INFO:root:[validation] The current loss: 0.23810714, acc*auc: 0.3666
+INFO:root:trigger times: 1
+INFO:root:[1/5][2/100] loss: 0.028198696
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5362
+INFO:root:[validation] The current loss: 0.23781771, acc*auc: 0.3439
+INFO:root:[1/5][3/100] loss: 0.028001991
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.508
+INFO:root:[validation] The current loss: 0.23776926, acc*auc: 0.3258
+INFO:root:[1/5][4/100] loss: 0.028099713
+INFO:root:acc: 0.6413, tpr: 0.0303, tnr: 0.9831, ppv: 0.5, npv: 0.6444, auc: 0.5244
+INFO:root:[validation] The current loss: 0.2363997, acc*auc: 0.3363
+INFO:root:[1/5][5/100] loss: 0.028000058
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5362
+INFO:root:[validation] The current loss: 0.23552581, acc*auc: 0.3439
+INFO:root:[1/5][6/100] loss: 0.027876832
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5347
+INFO:root:[validation] The current loss: 0.23649015, acc*auc: 0.3429
+INFO:root:trigger times: 1
+INFO:root:[1/5][7/100] loss: 0.027878181
+INFO:root:acc: 0.663, tpr: 0.1515, tnr: 0.9492, ppv: 0.625, npv: 0.6667, auc: 0.5547
+INFO:root:[validation] The current loss: 0.23494532, acc*auc: 0.3678
+INFO:root:[1/5][8/100] loss: 0.027760518
+INFO:root:acc: 0.6413, tpr: 0.06061, tnr: 0.9661, ppv: 0.5, npv: 0.6477, auc: 0.5603
+INFO:root:[validation] The current loss: 0.2347583, acc*auc: 0.3594
+INFO:root:[1/5][9/100] loss: 0.027935469
+INFO:root:acc: 0.6304, tpr: 0.1212, tnr: 0.9153, ppv: 0.4444, npv: 0.6506, auc: 0.5737
+INFO:root:[validation] The current loss: 0.23601303, acc*auc: 0.3617
+INFO:root:trigger times: 1
+INFO:root:[1/5][10/100] loss: 0.027738946
+INFO:root:acc: 0.6522, tpr: 0.09091, tnr: 0.9661, ppv: 0.6, npv: 0.6552, auc: 0.5901
+INFO:root:[validation] The current loss: 0.23441987, acc*auc: 0.3849
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[1/5][11/100] loss: 0.027636593
+INFO:root:acc: 0.6739, tpr: 0.1212, tnr: 0.9831, ppv: 0.8, npv: 0.6667, auc: 0.6328
+INFO:root:[validation] The current loss: 0.23197153, acc*auc: 0.4264
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[1/5][12/100] loss: 0.027629431
+INFO:root:acc: 0.6739, tpr: 0.1515, tnr: 0.9661, ppv: 0.7143, npv: 0.6706, auc: 0.6256
+INFO:root:[validation] The current loss: 0.23623527, acc*auc: 0.4216
+INFO:root:trigger times: 1
+INFO:root:[1/5][13/100] loss: 0.027627883
+INFO:root:acc: 0.6848, tpr: 0.1818, tnr: 0.9661, ppv: 0.75, npv: 0.6786, auc: 0.6636
+INFO:root:[validation] The current loss: 0.22827734, acc*auc: 0.4544
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[1/5][14/100] loss: 0.027355582
+INFO:root:acc: 0.663, tpr: 0.2121, tnr: 0.9153, ppv: 0.5833, npv: 0.675, auc: 0.6954
+INFO:root:[validation] The current loss: 0.22530284, acc*auc: 0.4611
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[1/5][15/100] loss: 0.027293455
+INFO:root:acc: 0.6304, tpr: 0.3333, tnr: 0.7966, ppv: 0.4783, npv: 0.6812, auc: 0.6502
+INFO:root:[validation] The current loss: 0.22948068, acc*auc: 0.4099
+INFO:root:trigger times: 1
+INFO:root:[1/5][16/100] loss: 0.027294263
+INFO:root:acc: 0.6957, tpr: 0.2424, tnr: 0.9492, ppv: 0.7273, npv: 0.6914, auc: 0.7036
+INFO:root:[validation] The current loss: 0.22278279, acc*auc: 0.4895
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[1/5][17/100] loss: 0.027018762
+INFO:root:acc: 0.6413, tpr: 0.4848, tnr: 0.7288, ppv: 0.5, npv: 0.7167, auc: 0.6497
+INFO:root:[validation] The current loss: 0.2251242, acc*auc: 0.4167
+INFO:root:trigger times: 1
+INFO:root:[1/5][18/100] loss: 0.026724629
+INFO:root:acc: 0.6522, tpr: 0.6667, tnr: 0.6441, ppv: 0.5116, npv: 0.7755, auc: 0.7334
+INFO:root:[validation] The current loss: 0.21891786, acc*auc: 0.4783
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+INFO:root:[1/5][19/100] loss: 0.026452907
+INFO:root:acc: 0.7065, tpr: 0.5758, tnr: 0.7797, ppv: 0.5938, npv: 0.7667, auc: 0.7083
+INFO:root:[validation] The current loss: 0.22220723, acc*auc: 0.5004
+INFO:root:trigger times: 1
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[1/5][20/100] loss: 0.026432282
+INFO:root:acc: 0.6848, tpr: 0.4545, tnr: 0.8136, ppv: 0.5769, npv: 0.7273, auc: 0.7006
+INFO:root:[validation] The current loss: 0.21833602, acc*auc: 0.4797
+INFO:root:[1/5][21/100] loss: 0.026123677
+INFO:root:acc: 0.6739, tpr: 0.4848, tnr: 0.7797, ppv: 0.5517, npv: 0.7302, auc: 0.7067
+INFO:root:[validation] The current loss: 0.21624261, acc*auc: 0.4763
+INFO:root:[1/5][22/100] loss: 0.025955469
+INFO:root:acc: 0.6522, tpr: 0.5455, tnr: 0.7119, ppv: 0.5143, npv: 0.7368, auc: 0.7021
+INFO:root:[validation] The current loss: 0.2175265, acc*auc: 0.4579
+INFO:root:trigger times: 1
+INFO:root:[1/5][23/100] loss: 0.02570206
+INFO:root:acc: 0.6848, tpr: 0.5152, tnr: 0.7797, ppv: 0.5667, npv: 0.7419, auc: 0.7031
+INFO:root:[validation] The current loss: 0.21645129, acc*auc: 0.4815
+INFO:root:[1/5][24/100] loss: 0.025974948
+INFO:root:acc: 0.6739, tpr: 0.5152, tnr: 0.7627, ppv: 0.5484, npv: 0.7377, auc: 0.7124
+INFO:root:[validation] The current loss: 0.21603525, acc*auc: 0.4801
+INFO:root:[1/5][25/100] loss: 0.025679259
+INFO:root:acc: 0.6957, tpr: 0.5152, tnr: 0.7966, ppv: 0.5862, npv: 0.746, auc: 0.7078
+INFO:root:[validation] The current loss: 0.21703126, acc*auc: 0.4924
+INFO:root:trigger times: 1
+INFO:root:[1/5][26/100] loss: 0.025594187
+INFO:root:acc: 0.663, tpr: 0.3939, tnr: 0.8136, ppv: 0.5417, npv: 0.7059, auc: 0.6857
+INFO:root:[validation] The current loss: 0.22036837, acc*auc: 0.4546
+INFO:root:trigger times: 2
+INFO:root:[1/5][27/100] loss: 0.025715245
+INFO:root:acc: 0.6848, tpr: 0.5455, tnr: 0.7627, ppv: 0.5625, npv: 0.75, auc: 0.7155
+INFO:root:[validation] The current loss: 0.21326236, acc*auc: 0.4899
+INFO:root:[1/5][28/100] loss: 0.025345916
+INFO:root:acc: 0.7065, tpr: 0.5152, tnr: 0.8136, ppv: 0.6071, npv: 0.75, auc: 0.6965
+INFO:root:[validation] The current loss: 0.21683553, acc*auc: 0.4921
+INFO:root:trigger times: 1
+INFO:root:[1/5][29/100] loss: 0.025409736
+INFO:root:acc: 0.5761, tpr: 0.6364, tnr: 0.5424, ppv: 0.4375, npv: 0.7273, auc: 0.6985
+INFO:root:[validation] The current loss: 0.21727575, acc*auc: 0.4024
+INFO:root:trigger times: 2
+INFO:root:[1/5][30/100] loss: 0.025413586
+INFO:root:acc: 0.6848, tpr: 0.4545, tnr: 0.8136, ppv: 0.5769, npv: 0.7273, auc: 0.7129
+INFO:root:[validation] The current loss: 0.21298865, acc*auc: 0.4882
+INFO:root:[1/5][31/100] loss: 0.024877863
+INFO:root:acc: 0.663, tpr: 0.697, tnr: 0.6441, ppv: 0.5227, npv: 0.7917, auc: 0.7381
+INFO:root:[validation] The current loss: 0.2110335, acc*auc: 0.4894
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+INFO:root:[1/5][32/100] loss: 0.02474916
+INFO:root:acc: 0.7174, tpr: 0.2727, tnr: 0.9661, ppv: 0.8182, npv: 0.7037, auc: 0.6764
+INFO:root:[validation] The current loss: 0.25874505, acc*auc: 0.4853
+INFO:root:trigger times: 1
+INFO:root:[1/5][33/100] loss: 0.024636821
+INFO:root:acc: 0.7065, tpr: 0.3939, tnr: 0.8814, ppv: 0.65, npv: 0.7222, auc: 0.7165
+INFO:root:[validation] The current loss: 0.21416872, acc*auc: 0.5062
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[1/5][34/100] loss: 0.024750788
+INFO:root:acc: 0.587, tpr: 0.7273, tnr: 0.5085, ppv: 0.4528, npv: 0.7692, auc: 0.7011
+INFO:root:[validation] The current loss: 0.21596271, acc*auc: 0.4115
+INFO:root:trigger times: 1
+INFO:root:[1/5][35/100] loss: 0.024206197
+INFO:root:acc: 0.6739, tpr: 0.4545, tnr: 0.7966, ppv: 0.5556, npv: 0.7231, auc: 0.6882
+INFO:root:[validation] The current loss: 0.22100614, acc*auc: 0.4638
+INFO:root:trigger times: 2
+INFO:root:[1/5][36/100] loss: 0.023869517
+INFO:root:acc: 0.5326, tpr: 0.8788, tnr: 0.339, ppv: 0.4265, npv: 0.8333, auc: 0.6733
+INFO:root:[validation] The current loss: 0.23159313, acc*auc: 0.3586
+INFO:root:trigger times: 3
+INFO:root:[1/5][37/100] loss: 0.023515421
+INFO:root:acc: 0.7283, tpr: 0.303, tnr: 0.9661, ppv: 0.8333, npv: 0.7125, auc: 0.7042
+INFO:root:[validation] The current loss: 0.24584713, acc*auc: 0.5128
+INFO:root:trigger times: 4
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[1/5][38/100] loss: 0.02342892
+INFO:root:acc: 0.6196, tpr: 0.7273, tnr: 0.5593, ppv: 0.48, npv: 0.7857, auc: 0.6888
+INFO:root:[validation] The current loss: 0.21728701, acc*auc: 0.4267
+INFO:root:[1/5][39/100] loss: 0.022549736
+INFO:root:acc: 0.5109, tpr: 0.9091, tnr: 0.2881, ppv: 0.4167, npv: 0.85, auc: 0.7483
+INFO:root:[validation] The current loss: 0.2193349, acc*auc: 0.3823
+INFO:root:trigger times: 1
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+INFO:root:[1/5][40/100] loss: 0.022454827
+INFO:root:acc: 0.7174, tpr: 0.4848, tnr: 0.8475, ppv: 0.64, npv: 0.7463, auc: 0.7447
+INFO:root:[validation] The current loss: 0.21468043, acc*auc: 0.5343
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[1/5][41/100] loss: 0.021717707
+INFO:root:acc: 0.5326, tpr: 0.9394, tnr: 0.3051, ppv: 0.4306, npv: 0.9, auc: 0.6405
+INFO:root:[validation] The current loss: 0.23473671, acc*auc: 0.3411
+INFO:root:trigger times: 1
+INFO:root:[1/5][42/100] loss: 0.020951606
+INFO:root:acc: 0.6957, tpr: 0.4848, tnr: 0.8136, ppv: 0.5926, npv: 0.7385, auc: 0.7185
+INFO:root:[validation] The current loss: 0.21157515, acc*auc: 0.4999
+INFO:root:[1/5][43/100] loss: 0.020431371
+INFO:root:acc: 0.6196, tpr: 0.5455, tnr: 0.661, ppv: 0.4737, npv: 0.7222, auc: 0.6949
+INFO:root:[validation] The current loss: 0.21665081, acc*auc: 0.4305
+INFO:root:trigger times: 1
+INFO:root:[1/5][44/100] loss: 0.020573285
+INFO:root:acc: 0.6087, tpr: 0.4545, tnr: 0.6949, ppv: 0.4545, npv: 0.6949, auc: 0.7149
+INFO:root:[validation] The current loss: 0.2094236, acc*auc: 0.4352
+INFO:root:[1/5][45/100] loss: 0.019792133
+INFO:root:acc: 0.6522, tpr: 0.5758, tnr: 0.6949, ppv: 0.5135, npv: 0.7455, auc: 0.7052
+INFO:root:[validation] The current loss: 0.21255749, acc*auc: 0.4599
+INFO:root:trigger times: 1
+INFO:root:[1/5][46/100] loss: 0.019767427
+INFO:root:acc: 0.6087, tpr: 0.7576, tnr: 0.5254, ppv: 0.4717, npv: 0.7949, auc: 0.6805
+INFO:root:[validation] The current loss: 0.21744079, acc*auc: 0.4142
+INFO:root:trigger times: 2
+INFO:root:[1/5][47/100] loss: 0.019324151
+INFO:root:acc: 0.6413, tpr: 0.4848, tnr: 0.7288, ppv: 0.5, npv: 0.7167, auc: 0.7149
+INFO:root:[validation] The current loss: 0.21088697, acc*auc: 0.4585
+INFO:root:[1/5][48/100] loss: 0.019981616
+INFO:root:acc: 0.6087, tpr: 0.5758, tnr: 0.6271, ppv: 0.4634, npv: 0.7255, auc: 0.6954
+INFO:root:[validation] The current loss: 0.21250931, acc*auc: 0.4233
+INFO:root:trigger times: 1
+INFO:root:[1/5][49/100] loss: 0.019683072
+INFO:root:acc: 0.6087, tpr: 0.5758, tnr: 0.6271, ppv: 0.4634, npv: 0.7255, auc: 0.6949
+INFO:root:[validation] The current loss: 0.21162441, acc*auc: 0.423
+INFO:root:[1/5][50/100] loss: 0.018999373
+INFO:root:acc: 0.6087, tpr: 0.5152, tnr: 0.661, ppv: 0.4595, npv: 0.7091, auc: 0.7062
+INFO:root:[validation] The current loss: 0.21027392, acc*auc: 0.4299
+INFO:root:[1/5][51/100] loss: 0.019212026
+INFO:root:acc: 0.6087, tpr: 0.5758, tnr: 0.6271, ppv: 0.4634, npv: 0.7255, auc: 0.6898
+INFO:root:[validation] The current loss: 0.21496112, acc*auc: 0.4199
+INFO:root:trigger times: 1
+INFO:root:[1/5][52/100] loss: 0.019307329
+INFO:root:acc: 0.587, tpr: 0.6061, tnr: 0.5763, ppv: 0.4444, npv: 0.7234, auc: 0.6754
+INFO:root:[validation] The current loss: 0.21893327, acc*auc: 0.3964
+INFO:root:trigger times: 2
+INFO:root:[1/5][53/100] loss: 0.01879321
+INFO:root:acc: 0.5978, tpr: 0.7879, tnr: 0.4915, ppv: 0.4643, npv: 0.8056, auc: 0.6492
+INFO:root:[validation] The current loss: 0.22714648, acc*auc: 0.3881
+INFO:root:trigger times: 3
+INFO:root:[1/5][54/100] loss: 0.018839099
+INFO:root:acc: 0.5761, tpr: 0.7273, tnr: 0.4915, ppv: 0.4444, npv: 0.7632, auc: 0.6728
+INFO:root:[validation] The current loss: 0.22188525, acc*auc: 0.3876
+INFO:root:[1/5][55/100] loss: 0.019695809
+INFO:root:acc: 0.6739, tpr: 0.4848, tnr: 0.7797, ppv: 0.5517, npv: 0.7302, auc: 0.7298
+INFO:root:[validation] The current loss: 0.21094326, acc*auc: 0.4918
+INFO:root:[1/5][56/100] loss: 0.020830778
+INFO:root:acc: 0.6848, tpr: 0.6364, tnr: 0.7119, ppv: 0.5526, npv: 0.7778, auc: 0.6985
+INFO:root:[validation] The current loss: 0.21738069, acc*auc: 0.4783
+INFO:root:trigger times: 1
+INFO:root:[1/5][57/100] loss: 0.0201232
+INFO:root:acc: 0.6522, tpr: 0.6667, tnr: 0.6441, ppv: 0.5116, npv: 0.7755, auc: 0.6985
+INFO:root:[validation] The current loss: 0.2121222, acc*auc: 0.4556
+INFO:root:[1/5][58/100] loss: 0.019662774
+INFO:root:acc: 0.4348, tpr: 1.0, tnr: 0.1186, ppv: 0.3882, npv: 1.0, auc: 0.6138
+INFO:root:[validation] The current loss: 0.28189048, acc*auc: 0.2669
+INFO:root:trigger times: 1
+INFO:root:[1/5][59/100] loss: 0.019998626
+INFO:root:acc: 0.4674, tpr: 0.9697, tnr: 0.1864, ppv: 0.4, npv: 0.9167, auc: 0.6153
+INFO:root:[validation] The current loss: 0.27361644, acc*auc: 0.2876
+INFO:root:[1/5][60/100] loss: 0.020701976
+INFO:root:acc: 0.5435, tpr: 0.9091, tnr: 0.339, ppv: 0.4348, npv: 0.8696, auc: 0.6394
+INFO:root:[validation] The current loss: 0.24756159, acc*auc: 0.3475
+INFO:root:[1/5][61/100] loss: 0.0192862
+INFO:root:acc: 0.6196, tpr: 0.4545, tnr: 0.7119, ppv: 0.4688, npv: 0.7, auc: 0.6759
+INFO:root:[validation] The current loss: 0.25042593, acc*auc: 0.4188
+INFO:root:trigger times: 1
+INFO:root:[1/5][62/100] loss: 0.018595184
+INFO:root:acc: 0.4022, tpr: 1.0, tnr: 0.0678, ppv: 0.375, npv: 1.0, auc: 0.6225
+INFO:root:[validation] The current loss: 0.30899951, acc*auc: 0.2504
+INFO:root:trigger times: 2
+INFO:root:[1/5][63/100] loss: 0.019108887
+INFO:root:acc: 0.587, tpr: 0.4848, tnr: 0.6441, ppv: 0.4324, npv: 0.6909, auc: 0.6204
+INFO:root:[validation] The current loss: 0.24972328, acc*auc: 0.3642
+INFO:root:[1/5][64/100] loss: 0.019078117
+INFO:root:acc: 0.5543, tpr: 0.8182, tnr: 0.4068, ppv: 0.4355, npv: 0.8, auc: 0.622
+INFO:root:[validation] The current loss: 0.24067629, acc*auc: 0.3448
+INFO:root:[1/5][65/100] loss: 0.018871067
+INFO:root:acc: 0.6196, tpr: 0.6061, tnr: 0.6271, ppv: 0.4762, npv: 0.74, auc: 0.6965
+INFO:root:[validation] The current loss: 0.22277253, acc*auc: 0.4315
+INFO:root:[1/5][66/100] loss: 0.017312752
+INFO:root:acc: 0.5761, tpr: 0.3939, tnr: 0.678, ppv: 0.4062, npv: 0.6667, auc: 0.6713
+INFO:root:[validation] The current loss: 0.24940376, acc*auc: 0.3867
+INFO:root:trigger times: 1
+INFO:root:[1/5][67/100] loss: 0.018085482
+INFO:root:acc: 0.4022, tpr: 0.9697, tnr: 0.08475, ppv: 0.3721, npv: 0.8333, auc: 0.5824
+INFO:root:[validation] The current loss: 0.2940793, acc*auc: 0.2342
+INFO:root:trigger times: 2
+INFO:root:[1/5][68/100] loss: 0.017233719
+INFO:root:acc: 0.5978, tpr: 0.3333, tnr: 0.7458, ppv: 0.4231, npv: 0.6667, auc: 0.6667
+INFO:root:[validation] The current loss: 0.25589082, acc*auc: 0.3986
+INFO:root:[1/5][69/100] loss: 0.017118134
+INFO:root:acc: 0.6522, tpr: 0.4242, tnr: 0.7797, ppv: 0.5185, npv: 0.7077, auc: 0.6754
+INFO:root:[validation] The current loss: 0.24541625, acc*auc: 0.4405
+INFO:root:[1/5][70/100] loss: 0.018404525
+INFO:root:acc: 0.6087, tpr: 0.5455, tnr: 0.6441, ppv: 0.4615, npv: 0.717, auc: 0.6739
+INFO:root:[validation] The current loss: 0.23365583, acc*auc: 0.4102
+INFO:root:[1/5][71/100] loss: 0.016525133
+INFO:root:acc: 0.6087, tpr: 0.4848, tnr: 0.678, ppv: 0.4571, npv: 0.7018, auc: 0.662
+INFO:root:[validation] The current loss: 0.23814709, acc*auc: 0.403
+INFO:root:trigger times: 1
+INFO:root:[1/5][72/100] loss: 0.017484739
+INFO:root:acc: 0.587, tpr: 0.4242, tnr: 0.678, ppv: 0.4242, npv: 0.678, auc: 0.6723
+INFO:root:[validation] The current loss: 0.24944793, acc*auc: 0.3946
+INFO:root:trigger times: 2
+INFO:root:[1/5][73/100] loss: 0.016596531
+INFO:root:acc: 0.587, tpr: 0.3939, tnr: 0.6949, ppv: 0.4194, npv: 0.6721, auc: 0.6605
+INFO:root:[validation] The current loss: 0.24413852, acc*auc: 0.3877
+INFO:root:[1/5][74/100] loss: 0.015891223
+INFO:root:acc: 0.5978, tpr: 0.4545, tnr: 0.678, ppv: 0.4412, npv: 0.6897, auc: 0.6672
+INFO:root:[validation] The current loss: 0.23805331, acc*auc: 0.3989
+INFO:root:[1/5][75/100] loss: 0.016348077
+INFO:root:acc: 0.5978, tpr: 0.3939, tnr: 0.7119, ppv: 0.4333, npv: 0.6774, auc: 0.6769
+INFO:root:[validation] The current loss: 0.24604573, acc*auc: 0.4047
+INFO:root:trigger times: 1
+INFO:root:[1/5][76/100] loss: 0.016496919
+INFO:root:acc: 0.6087, tpr: 0.5455, tnr: 0.6441, ppv: 0.4615, npv: 0.717, auc: 0.6564
+INFO:root:[validation] The current loss: 0.23765742, acc*auc: 0.3995
+INFO:root:[1/5][77/100] loss: 0.01682418
+INFO:root:acc: 0.5652, tpr: 0.6364, tnr: 0.5254, ppv: 0.4286, npv: 0.7209, auc: 0.6081
+INFO:root:[validation] The current loss: 0.24864445, acc*auc: 0.3437
+INFO:root:trigger times: 1
+INFO:root:[1/5][78/100] loss: 0.01673402
+INFO:root:acc: 0.5652, tpr: 0.7576, tnr: 0.4576, ppv: 0.4386, npv: 0.7714, auc: 0.6133
+INFO:root:[validation] The current loss: 0.25702395, acc*auc: 0.3466
+INFO:root:trigger times: 2
+INFO:root:[1/5][79/100] loss: 0.015690139
+INFO:root:acc: 0.5652, tpr: 0.3636, tnr: 0.678, ppv: 0.3871, npv: 0.6557, auc: 0.6656
+INFO:root:[validation] The current loss: 0.25209906, acc*auc: 0.3762
+INFO:root:[1/5][80/100] loss: 0.016397935
+INFO:root:acc: 0.5761, tpr: 0.5758, tnr: 0.5763, ppv: 0.4318, npv: 0.7083, auc: 0.6014
+INFO:root:[validation] The current loss: 0.27248948, acc*auc: 0.3465
+INFO:root:trigger times: 1
+INFO:root:[1/5][81/100] loss: 0.017197827
+INFO:root:acc: 0.6304, tpr: 0.2727, tnr: 0.8305, ppv: 0.4737, npv: 0.6712, auc: 0.6923
+INFO:root:[validation] The current loss: 0.30573882, acc*auc: 0.4365
+INFO:root:trigger times: 2
+INFO:root:[1/5][82/100] loss: 0.016878837
+INFO:root:acc: 0.6522, tpr: 0.5758, tnr: 0.6949, ppv: 0.5135, npv: 0.7455, auc: 0.7026
+INFO:root:[validation] The current loss: 0.23271406, acc*auc: 0.4582
+INFO:root:[1/5][83/100] loss: 0.017120638
+INFO:root:acc: 0.4783, tpr: 0.9091, tnr: 0.2373, ppv: 0.4, npv: 0.8235, auc: 0.5932
+INFO:root:[validation] The current loss: 0.27700963, acc*auc: 0.2837
+INFO:root:trigger times: 1
+INFO:root:[1/5][84/100] loss: 0.016630006
+INFO:root:acc: 0.6413, tpr: 0.6061, tnr: 0.661, ppv: 0.5, npv: 0.75, auc: 0.6918
+INFO:root:[validation] The current loss: 0.23087688, acc*auc: 0.4437
+INFO:root:[1/5][85/100] loss: 0.016449779
+INFO:root:acc: 0.6087, tpr: 0.303, tnr: 0.7797, ppv: 0.4348, npv: 0.6667, auc: 0.6728
+INFO:root:[validation] The current loss: 0.2922153, acc*auc: 0.4095
+INFO:root:trigger times: 1
+INFO:root:[1/5][86/100] loss: 0.016602103
+INFO:root:acc: 0.5543, tpr: 0.303, tnr: 0.6949, ppv: 0.3571, npv: 0.6406, auc: 0.6687
+INFO:root:[validation] The current loss: 0.26953689, acc*auc: 0.3707
+INFO:root:[1/5][87/100] loss: 0.016322171
+INFO:root:acc: 0.5652, tpr: 0.697, tnr: 0.4915, ppv: 0.434, npv: 0.7436, auc: 0.6323
+INFO:root:[validation] The current loss: 0.25324221, acc*auc: 0.3574
+INFO:root:[1/5][88/100] loss: 0.016839337
+INFO:root:acc: 0.5761, tpr: 0.6364, tnr: 0.5424, ppv: 0.4375, npv: 0.7273, auc: 0.5845
+INFO:root:[validation] The current loss: 0.28546315, acc*auc: 0.3367
+INFO:root:trigger times: 1
+INFO:root:[1/5][89/100] loss: 0.017654166
+INFO:root:acc: 0.6196, tpr: 0.2727, tnr: 0.8136, ppv: 0.45, npv: 0.6667, auc: 0.6805
+INFO:root:[validation] The current loss: 0.27952676, acc*auc: 0.4216
+INFO:root:[1/5][90/100] loss: 0.016894932
+INFO:root:acc: 0.5978, tpr: 0.3939, tnr: 0.7119, ppv: 0.4333, npv: 0.6774, auc: 0.6692
+INFO:root:[validation] The current loss: 0.24632932, acc*auc: 0.4001
+INFO:root:[1/5][91/100] loss: 0.016611397
+INFO:root:acc: 0.5761, tpr: 0.2424, tnr: 0.7627, ppv: 0.3636, npv: 0.6429, auc: 0.6507
+INFO:root:[validation] The current loss: 0.28819153, acc*auc: 0.3749
+INFO:root:trigger times: 1
+INFO:root:[1/5][92/100] loss: 0.015999054
+INFO:root:acc: 0.6522, tpr: 0.0303, tnr: 1.0, ppv: 1.0, npv: 0.6484, auc: 0.662
+INFO:root:[validation] The current loss: 0.41393662, acc*auc: 0.4318
+INFO:root:trigger times: 2
+INFO:root:[1/5][93/100] loss: 0.016115777
+INFO:root:acc: 0.6087, tpr: 0.2424, tnr: 0.8136, ppv: 0.4211, npv: 0.6575, auc: 0.6893
+INFO:root:[validation] The current loss: 0.31311603, acc*auc: 0.4196
+INFO:root:[1/5][94/100] loss: 0.01600431
+INFO:root:acc: 0.6196, tpr: 0.4242, tnr: 0.7288, ppv: 0.4667, npv: 0.6935, auc: 0.6816
+INFO:root:[validation] The current loss: 0.26059472, acc*auc: 0.4223
+INFO:root:[1/5][95/100] loss: 0.015396443
+INFO:root:acc: 0.6304, tpr: 0.4848, tnr: 0.7119, ppv: 0.4848, npv: 0.7119, auc: 0.6769
+INFO:root:[validation] The current loss: 0.24711953, acc*auc: 0.4268
+INFO:root:[1/5][96/100] loss: 0.015675391
+INFO:root:acc: 0.5978, tpr: 0.3939, tnr: 0.7119, ppv: 0.4333, npv: 0.6774, auc: 0.6867
+INFO:root:[validation] The current loss: 0.26678222, acc*auc: 0.4105
+INFO:root:trigger times: 1
+INFO:root:[1/5][97/100] loss: 0.014807771
+INFO:root:acc: 0.5652, tpr: 0.3333, tnr: 0.6949, ppv: 0.3793, npv: 0.6508, auc: 0.6852
+INFO:root:[validation] The current loss: 0.26510351, acc*auc: 0.3873
+INFO:root:[1/5][98/100] loss: 0.015395492
+INFO:root:acc: 0.5978, tpr: 0.4242, tnr: 0.6949, ppv: 0.4375, npv: 0.6833, auc: 0.6872
+INFO:root:[validation] The current loss: 0.25526157, acc*auc: 0.4108
+INFO:root:[1/5][99/100] loss: 0.015155274
+INFO:root:acc: 0.587, tpr: 0.3333, tnr: 0.7288, ppv: 0.4074, npv: 0.6615, auc: 0.6918
+INFO:root:[validation] The current loss: 0.26225064, acc*auc: 0.4061
+INFO:root:trigger times: 1
+INFO:root:stopping! Epoch = 100
+WARNING:root:weights = [1, 2]
+INFO:root:data sampling method: no-sampling
+INFO:root:training set size: 819
+INFO:root:data sampling method: no-sampling
+INFO:root:val set size: 92
+INFO:root:[2/5][0/100] loss: 0.028235425
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5799
+INFO:root:[validation] The current loss: 0.23791512, acc*auc: 0.3719
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[2/5][1/100] loss: 0.02821451
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5722
+INFO:root:[validation] The current loss: 0.23810736, acc*auc: 0.3669
+INFO:root:trigger times: 1
+INFO:root:[2/5][2/100] loss: 0.028198693
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5362
+INFO:root:[validation] The current loss: 0.2378177, acc*auc: 0.3439
+INFO:root:[2/5][3/100] loss: 0.028002015
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5074
+INFO:root:[validation] The current loss: 0.23776296, acc*auc: 0.3254
+INFO:root:[2/5][4/100] loss: 0.028100114
+INFO:root:acc: 0.6413, tpr: 0.0303, tnr: 0.9831, ppv: 0.5, npv: 0.6444, auc: 0.5223
+INFO:root:[validation] The current loss: 0.23644242, acc*auc: 0.335
+INFO:root:[2/5][5/100] loss: 0.027998234
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5342
+INFO:root:[validation] The current loss: 0.23555379, acc*auc: 0.3426
+INFO:root:[2/5][6/100] loss: 0.027902623
+INFO:root:acc: 0.6522, tpr: 0.0303, tnr: 1.0, ppv: 1.0, npv: 0.6484, auc: 0.5295
+INFO:root:[validation] The current loss: 0.23604175, acc*auc: 0.3453
+INFO:root:trigger times: 1
+INFO:root:[2/5][7/100] loss: 0.027869876
+INFO:root:acc: 0.6522, tpr: 0.0303, tnr: 1.0, ppv: 1.0, npv: 0.6484, auc: 0.5383
+INFO:root:[validation] The current loss: 0.23495554, acc*auc: 0.351
+INFO:root:[2/5][8/100] loss: 0.027784529
+INFO:root:acc: 0.6522, tpr: 0.0303, tnr: 1.0, ppv: 1.0, npv: 0.6484, auc: 0.5449
+INFO:root:[validation] The current loss: 0.23464469, acc*auc: 0.3554
+INFO:root:[2/5][9/100] loss: 0.027867667
+INFO:root:acc: 0.6522, tpr: 0.1212, tnr: 0.9492, ppv: 0.5714, npv: 0.6588, auc: 0.5706
+INFO:root:[validation] The current loss: 0.23322726, acc*auc: 0.3721
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[2/5][10/100] loss: 0.027704174
+INFO:root:acc: 0.6522, tpr: 0.1515, tnr: 0.9322, ppv: 0.5556, npv: 0.6627, auc: 0.5629
+INFO:root:[validation] The current loss: 0.2348641, acc*auc: 0.3671
+INFO:root:trigger times: 1
+INFO:root:[2/5][11/100] loss: 0.027616661
+INFO:root:acc: 0.6304, tpr: 0.303, tnr: 0.8136, ppv: 0.4762, npv: 0.6761, auc: 0.6302
+INFO:root:[validation] The current loss: 0.23097616, acc*auc: 0.3973
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[2/5][12/100] loss: 0.027548365
+INFO:root:acc: 0.6196, tpr: 0.1212, tnr: 0.8983, ppv: 0.4, npv: 0.6463, auc: 0.6168
+INFO:root:[validation] The current loss: 0.23353059, acc*auc: 0.3822
+INFO:root:trigger times: 1
+INFO:root:[2/5][13/100] loss: 0.027559035
+INFO:root:acc: 0.6739, tpr: 0.1515, tnr: 0.9661, ppv: 0.7143, npv: 0.6706, auc: 0.6482
+INFO:root:[validation] The current loss: 0.2306958, acc*auc: 0.4368
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[2/5][14/100] loss: 0.027296066
+INFO:root:acc: 0.6957, tpr: 0.1818, tnr: 0.9831, ppv: 0.8571, npv: 0.6824, auc: 0.6893
+INFO:root:[validation] The current loss: 0.22695669, acc*auc: 0.4795
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[2/5][15/100] loss: 0.027282845
+INFO:root:acc: 0.7065, tpr: 0.303, tnr: 0.9322, ppv: 0.7143, npv: 0.7051, auc: 0.6913
+INFO:root:[validation] The current loss: 0.22570759, acc*auc: 0.4884
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[2/5][16/100] loss: 0.027193344
+INFO:root:acc: 0.7174, tpr: 0.303, tnr: 0.9492, ppv: 0.7692, npv: 0.7089, auc: 0.6975
+INFO:root:[validation] The current loss: 0.22690513, acc*auc: 0.5004
+INFO:root:trigger times: 1
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[2/5][17/100] loss: 0.026785196
+INFO:root:acc: 0.5978, tpr: 0.5758, tnr: 0.6102, ppv: 0.4524, npv: 0.72, auc: 0.6631
+INFO:root:[validation] The current loss: 0.22262129, acc*auc: 0.3964
+INFO:root:[2/5][18/100] loss: 0.026655685
+INFO:root:acc: 0.6739, tpr: 0.5758, tnr: 0.7288, ppv: 0.5429, npv: 0.7544, auc: 0.7031
+INFO:root:[validation] The current loss: 0.21675824, acc*auc: 0.4739
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+INFO:root:[2/5][19/100] loss: 0.026434722
+INFO:root:acc: 0.663, tpr: 0.4848, tnr: 0.7627, ppv: 0.5333, npv: 0.7258, auc: 0.7047
+INFO:root:[validation] The current loss: 0.21957954, acc*auc: 0.4672
+INFO:root:trigger times: 1
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+INFO:root:[2/5][20/100] loss: 0.026252924
+INFO:root:acc: 0.663, tpr: 0.4848, tnr: 0.7627, ppv: 0.5333, npv: 0.7258, auc: 0.6995
+INFO:root:[validation] The current loss: 0.2162333, acc*auc: 0.4638
+INFO:root:[2/5][21/100] loss: 0.025843849
+INFO:root:acc: 0.6739, tpr: 0.3939, tnr: 0.8305, ppv: 0.5652, npv: 0.7101, auc: 0.7139
+INFO:root:[validation] The current loss: 0.21455885, acc*auc: 0.4811
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+INFO:root:[2/5][22/100] loss: 0.025724885
+INFO:root:acc: 0.6413, tpr: 0.5758, tnr: 0.678, ppv: 0.5, npv: 0.7407, auc: 0.7072
+INFO:root:[validation] The current loss: 0.21285455, acc*auc: 0.4536
+INFO:root:[2/5][23/100] loss: 0.025483458
+INFO:root:acc: 0.6739, tpr: 0.4545, tnr: 0.7966, ppv: 0.5556, npv: 0.7231, auc: 0.7119
+INFO:root:[validation] The current loss: 0.21319401, acc*auc: 0.4797
+INFO:root:trigger times: 1
+INFO:root:[2/5][24/100] loss: 0.025774259
+INFO:root:acc: 0.6413, tpr: 0.4545, tnr: 0.7458, ppv: 0.5, npv: 0.7097, auc: 0.7078
+INFO:root:[validation] The current loss: 0.21234895, acc*auc: 0.4539
+INFO:root:[2/5][25/100] loss: 0.025532369
+INFO:root:acc: 0.6522, tpr: 0.4848, tnr: 0.7458, ppv: 0.5161, npv: 0.7213, auc: 0.7078
+INFO:root:[validation] The current loss: 0.21346974, acc*auc: 0.4616
+INFO:root:trigger times: 1
+INFO:root:[2/5][26/100] loss: 0.025435318
+INFO:root:acc: 0.6739, tpr: 0.3333, tnr: 0.8644, ppv: 0.5789, npv: 0.6986, auc: 0.6954
+INFO:root:[validation] The current loss: 0.21826066, acc*auc: 0.4687
+INFO:root:trigger times: 2
+INFO:root:[2/5][27/100] loss: 0.02555511
+INFO:root:acc: 0.6848, tpr: 0.4545, tnr: 0.8136, ppv: 0.5769, npv: 0.7273, auc: 0.7124
+INFO:root:[validation] The current loss: 0.21178852, acc*auc: 0.4878
+INFO:root:[2/5][28/100] loss: 0.025174599
+INFO:root:acc: 0.6957, tpr: 0.5152, tnr: 0.7966, ppv: 0.5862, npv: 0.746, auc: 0.7006
+INFO:root:[validation] The current loss: 0.21283493, acc*auc: 0.4873
+INFO:root:trigger times: 1
+INFO:root:[2/5][29/100] loss: 0.025138425
+INFO:root:acc: 0.6739, tpr: 0.4545, tnr: 0.7966, ppv: 0.5556, npv: 0.7231, auc: 0.7057
+INFO:root:[validation] The current loss: 0.21498175, acc*auc: 0.4756
+INFO:root:trigger times: 2
+INFO:root:[2/5][30/100] loss: 0.025346007
+INFO:root:acc: 0.7391, tpr: 0.3939, tnr: 0.9322, ppv: 0.7647, npv: 0.7333, auc: 0.7129
+INFO:root:[validation] The current loss: 0.21555623, acc*auc: 0.5269
+INFO:root:trigger times: 3
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[2/5][31/100] loss: 0.024597901
+INFO:root:acc: 0.6848, tpr: 0.5758, tnr: 0.7458, ppv: 0.5588, npv: 0.7586, auc: 0.7452
+INFO:root:[validation] The current loss: 0.21101943, acc*auc: 0.5103
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+INFO:root:[2/5][32/100] loss: 0.02479491
+INFO:root:acc: 0.6739, tpr: 0.3333, tnr: 0.8644, ppv: 0.5789, npv: 0.6986, auc: 0.7088
+INFO:root:[validation] The current loss: 0.22122017, acc*auc: 0.4777
+INFO:root:trigger times: 1
+INFO:root:[2/5][33/100] loss: 0.02420903
+INFO:root:acc: 0.6196, tpr: 0.4848, tnr: 0.6949, ppv: 0.4706, npv: 0.7069, auc: 0.7078
+INFO:root:[validation] The current loss: 0.21099895, acc*auc: 0.4385
+INFO:root:[2/5][34/100] loss: 0.024773045
+INFO:root:acc: 0.5978, tpr: 0.7273, tnr: 0.5254, ppv: 0.4615, npv: 0.775, auc: 0.6836
+INFO:root:[validation] The current loss: 0.21741466, acc*auc: 0.4087
+INFO:root:trigger times: 1
+INFO:root:[2/5][35/100] loss: 0.0241182
+INFO:root:acc: 0.5978, tpr: 0.8788, tnr: 0.4407, ppv: 0.4677, npv: 0.8667, auc: 0.7237
+INFO:root:[validation] The current loss: 0.21565278, acc*auc: 0.4326
+INFO:root:[2/5][36/100] loss: 0.023692087
+INFO:root:acc: 0.5978, tpr: 0.9394, tnr: 0.4068, ppv: 0.4697, npv: 0.9231, auc: 0.7283
+INFO:root:[validation] The current loss: 0.21950264, acc*auc: 0.4354
+INFO:root:trigger times: 1
+INFO:root:[2/5][37/100] loss: 0.023545659
+INFO:root:acc: 0.663, tpr: 0.303, tnr: 0.8644, ppv: 0.5556, npv: 0.6892, auc: 0.7304
+INFO:root:[validation] The current loss: 0.21654845, acc*auc: 0.4843
+INFO:root:[2/5][38/100] loss: 0.023272646
+INFO:root:acc: 0.5761, tpr: 0.4848, tnr: 0.6271, ppv: 0.4211, npv: 0.6852, auc: 0.6333
+INFO:root:[validation] The current loss: 0.22233608, acc*auc: 0.3648
+INFO:root:trigger times: 1
+INFO:root:[2/5][39/100] loss: 0.022493919
+INFO:root:acc: 0.413, tpr: 0.9394, tnr: 0.1186, ppv: 0.3735, npv: 0.7778, auc: 0.5804
+INFO:root:[validation] The current loss: 0.27262, acc*auc: 0.2397
+INFO:root:trigger times: 2
+INFO:root:[2/5][40/100] loss: 0.021717807
+INFO:root:acc: 0.6413, tpr: 0.5758, tnr: 0.678, ppv: 0.5, npv: 0.7407, auc: 0.6918
+INFO:root:[validation] The current loss: 0.2166851, acc*auc: 0.4437
+INFO:root:[2/5][41/100] loss: 0.021588133
+INFO:root:acc: 0.4022, tpr: 0.8485, tnr: 0.1525, ppv: 0.359, npv: 0.6429, auc: 0.5521
+INFO:root:[validation] The current loss: 0.26051406, acc*auc: 0.2221
+INFO:root:trigger times: 1
+INFO:root:[2/5][42/100] loss: 0.021395552
+INFO:root:acc: 0.6848, tpr: 0.2121, tnr: 0.9492, ppv: 0.7, npv: 0.6829, auc: 0.7232
+INFO:root:[validation] The current loss: 0.24926438, acc*auc: 0.4952
+INFO:root:[2/5][43/100] loss: 0.021135404
+INFO:root:acc: 0.587, tpr: 0.6061, tnr: 0.5763, ppv: 0.4444, npv: 0.7234, auc: 0.659
+INFO:root:[validation] The current loss: 0.21962521, acc*auc: 0.3868
+INFO:root:[2/5][44/100] loss: 0.020752467
+INFO:root:acc: 0.6848, tpr: 0.3333, tnr: 0.8814, ppv: 0.6111, npv: 0.7027, auc: 0.7036
+INFO:root:[validation] The current loss: 0.22686317, acc*auc: 0.4818
+INFO:root:trigger times: 1
+INFO:root:[2/5][45/100] loss: 0.0201886
+INFO:root:acc: 0.6196, tpr: 0.7879, tnr: 0.5254, ppv: 0.4815, npv: 0.8158, auc: 0.6523
+INFO:root:[validation] The current loss: 0.22901447, acc*auc: 0.4041
+INFO:root:trigger times: 2
+INFO:root:[2/5][46/100] loss: 0.01989395
+INFO:root:acc: 0.6522, tpr: 0.8788, tnr: 0.5254, ppv: 0.5088, npv: 0.8857, auc: 0.6836
+INFO:root:[validation] The current loss: 0.21878931, acc*auc: 0.4458
+INFO:root:[2/5][47/100] loss: 0.019945728
+INFO:root:acc: 0.663, tpr: 0.4242, tnr: 0.7966, ppv: 0.5385, npv: 0.7121, auc: 0.6805
+INFO:root:[validation] The current loss: 0.22251129, acc*auc: 0.4512
+INFO:root:trigger times: 1
+INFO:root:[2/5][48/100] loss: 0.020258414
+INFO:root:acc: 0.6087, tpr: 0.6364, tnr: 0.5932, ppv: 0.4667, npv: 0.7447, auc: 0.6662
+INFO:root:[validation] The current loss: 0.2195607, acc*auc: 0.4055
+INFO:root:[2/5][49/100] loss: 0.02022862
+INFO:root:acc: 0.5761, tpr: 0.5455, tnr: 0.5932, ppv: 0.4286, npv: 0.7, auc: 0.6775
+INFO:root:[validation] The current loss: 0.2173438, acc*auc: 0.3903
+INFO:root:[2/5][50/100] loss: 0.019581095
+INFO:root:acc: 0.5761, tpr: 0.5152, tnr: 0.6102, ppv: 0.425, npv: 0.6923, auc: 0.681
+INFO:root:[validation] The current loss: 0.21723267, acc*auc: 0.3923
+INFO:root:[2/5][51/100] loss: 0.019935703
+INFO:root:acc: 0.6087, tpr: 0.5758, tnr: 0.6271, ppv: 0.4634, npv: 0.7255, auc: 0.6733
+INFO:root:[validation] The current loss: 0.21916772, acc*auc: 0.4099
+INFO:root:trigger times: 1
+INFO:root:[2/5][52/100] loss: 0.020056532
+INFO:root:acc: 0.6087, tpr: 0.5758, tnr: 0.6271, ppv: 0.4634, npv: 0.7255, auc: 0.6713
+INFO:root:[validation] The current loss: 0.22063294, acc*auc: 0.4086
+INFO:root:trigger times: 2
+INFO:root:[2/5][53/100] loss: 0.019298535
+INFO:root:acc: 0.6196, tpr: 0.8485, tnr: 0.4915, ppv: 0.4828, npv: 0.8529, auc: 0.6718
+INFO:root:[validation] The current loss: 0.22583456, acc*auc: 0.4162
+INFO:root:trigger times: 3
+INFO:root:[2/5][54/100] loss: 0.0197141
+INFO:root:acc: 0.5652, tpr: 0.7879, tnr: 0.4407, ppv: 0.4407, npv: 0.7879, auc: 0.6471
+INFO:root:[validation] The current loss: 0.22911848, acc*auc: 0.3658
+INFO:root:trigger times: 4
+INFO:root:[2/5][55/100] loss: 0.019837099
+INFO:root:acc: 0.6848, tpr: 0.4848, tnr: 0.7966, ppv: 0.5714, npv: 0.7344, auc: 0.7227
+INFO:root:[validation] The current loss: 0.21581335, acc*auc: 0.4949
+INFO:root:[2/5][56/100] loss: 0.019906676
+INFO:root:acc: 0.6522, tpr: 0.4545, tnr: 0.7627, ppv: 0.5172, npv: 0.7143, auc: 0.7334
+INFO:root:[validation] The current loss: 0.21719075, acc*auc: 0.4783
+INFO:root:trigger times: 1
+INFO:root:[2/5][57/100] loss: 0.020170025
+INFO:root:acc: 0.6848, tpr: 0.2121, tnr: 0.9492, ppv: 0.7, npv: 0.6829, auc: 0.753
+INFO:root:[validation] The current loss: 0.24551196, acc*auc: 0.5156
+INFO:root:trigger times: 2
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+INFO:root:[2/5][58/100] loss: 0.020715563
+INFO:root:acc: 0.3696, tpr: 1.0, tnr: 0.01695, ppv: 0.3626, npv: 1.0, auc: 0.5984
+INFO:root:[validation] The current loss: 0.29978187, acc*auc: 0.2211
+INFO:root:trigger times: 3
+INFO:root:[2/5][59/100] loss: 0.020280401
+INFO:root:acc: 0.6196, tpr: 0.697, tnr: 0.5763, ppv: 0.4792, npv: 0.7727, auc: 0.6662
+INFO:root:[validation] The current loss: 0.23948976, acc*auc: 0.4127
+INFO:root:[2/5][60/100] loss: 0.020789304
+INFO:root:acc: 0.5761, tpr: 0.6364, tnr: 0.5424, ppv: 0.4375, npv: 0.7273, auc: 0.6497
+INFO:root:[validation] The current loss: 0.23197653, acc*auc: 0.3743
+INFO:root:[2/5][61/100] loss: 0.019986281
+INFO:root:acc: 0.7065, tpr: 0.4848, tnr: 0.8305, ppv: 0.6154, npv: 0.7424, auc: 0.7314
+INFO:root:[validation] The current loss: 0.22629338, acc*auc: 0.5167
+INFO:root:[2/5][62/100] loss: 0.019284618
+INFO:root:acc: 0.4565, tpr: 1.0, tnr: 0.1525, ppv: 0.3976, npv: 1.0, auc: 0.6055
+INFO:root:[validation] The current loss: 0.29744709, acc*auc: 0.2764
+INFO:root:trigger times: 1
+INFO:root:[2/5][63/100] loss: 0.019982462
+INFO:root:acc: 0.6196, tpr: 0.7576, tnr: 0.5424, ppv: 0.4808, npv: 0.8, auc: 0.6728
+INFO:root:[validation] The current loss: 0.22445609, acc*auc: 0.4169
+INFO:root:[2/5][64/100] loss: 0.019462193
+INFO:root:acc: 0.5652, tpr: 0.8485, tnr: 0.4068, ppv: 0.4444, npv: 0.8276, auc: 0.7016
+INFO:root:[validation] The current loss: 0.22691236, acc*auc: 0.3966
+INFO:root:trigger times: 1
+INFO:root:[2/5][65/100] loss: 0.018713885
+INFO:root:acc: 0.6739, tpr: 0.5758, tnr: 0.7288, ppv: 0.5429, npv: 0.7544, auc: 0.7175
+INFO:root:[validation] The current loss: 0.21545001, acc*auc: 0.4835
+INFO:root:[2/5][66/100] loss: 0.018494157
+INFO:root:acc: 0.6848, tpr: 0.7273, tnr: 0.661, ppv: 0.5455, npv: 0.8125, auc: 0.7149
+INFO:root:[validation] The current loss: 0.21975195, acc*auc: 0.4896
+INFO:root:trigger times: 1
+INFO:root:[2/5][67/100] loss: 0.019128527
+INFO:root:acc: 0.6848, tpr: 0.697, tnr: 0.678, ppv: 0.5476, npv: 0.8, auc: 0.7273
+INFO:root:[validation] The current loss: 0.21049133, acc*auc: 0.498
+INFO:root:[2/5][68/100] loss: 0.018333202
+INFO:root:acc: 0.6304, tpr: 0.3636, tnr: 0.7797, ppv: 0.48, npv: 0.6866, auc: 0.7473
+INFO:root:[validation] The current loss: 0.21997441, acc*auc: 0.4711
+INFO:root:trigger times: 1
+INFO:root:[2/5][69/100] loss: 0.01828386
+INFO:root:acc: 0.6848, tpr: 0.4242, tnr: 0.8305, ppv: 0.5833, npv: 0.7206, auc: 0.7545
+INFO:root:[validation] The current loss: 0.21369717, acc*auc: 0.5167
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+INFO:root:[2/5][70/100] loss: 0.019239681
+INFO:root:acc: 0.6957, tpr: 0.6061, tnr: 0.7458, ppv: 0.5714, npv: 0.7719, auc: 0.7483
+INFO:root:[validation] The current loss: 0.21440449, acc*auc: 0.5206
+INFO:root:trigger times: 1
+INFO:root:[2/5][71/100] loss: 0.01762691
+INFO:root:acc: 0.7065, tpr: 0.5455, tnr: 0.7966, ppv: 0.6, npv: 0.7581, auc: 0.7571
+INFO:root:[validation] The current loss: 0.21005657, acc*auc: 0.5349
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[2/5][72/100] loss: 0.018941621
+INFO:root:acc: 0.6739, tpr: 0.5152, tnr: 0.7627, ppv: 0.5484, npv: 0.7377, auc: 0.7432
+INFO:root:[validation] The current loss: 0.21756954, acc*auc: 0.5008
+INFO:root:trigger times: 1
+INFO:root:[2/5][73/100] loss: 0.017766953
+INFO:root:acc: 0.663, tpr: 0.4242, tnr: 0.7966, ppv: 0.5385, npv: 0.7121, auc: 0.7519
+INFO:root:[validation] The current loss: 0.21717316, acc*auc: 0.4986
+INFO:root:[2/5][74/100] loss: 0.017152366
+INFO:root:acc: 0.6739, tpr: 0.5152, tnr: 0.7627, ppv: 0.5484, npv: 0.7377, auc: 0.7411
+INFO:root:[validation] The current loss: 0.21463312, acc*auc: 0.4995
+INFO:root:[2/5][75/100] loss: 0.017932558
+INFO:root:acc: 0.663, tpr: 0.4242, tnr: 0.7966, ppv: 0.5385, npv: 0.7121, auc: 0.7514
+INFO:root:[validation] The current loss: 0.21731156, acc*auc: 0.4982
+INFO:root:trigger times: 1
+INFO:root:[2/5][76/100] loss: 0.017695558
+INFO:root:acc: 0.6739, tpr: 0.5758, tnr: 0.7288, ppv: 0.5429, npv: 0.7544, auc: 0.7401
+INFO:root:[validation] The current loss: 0.21098444, acc*auc: 0.4988
+INFO:root:[2/5][77/100] loss: 0.018154255
+INFO:root:acc: 0.663, tpr: 0.6667, tnr: 0.661, ppv: 0.5238, npv: 0.78, auc: 0.6995
+INFO:root:[validation] The current loss: 0.22418951, acc*auc: 0.4638
+INFO:root:trigger times: 1
+INFO:root:[2/5][78/100] loss: 0.017864823
+INFO:root:acc: 0.6848, tpr: 0.6364, tnr: 0.7119, ppv: 0.5526, npv: 0.7778, auc: 0.717
+INFO:root:[validation] The current loss: 0.21701464, acc*auc: 0.491
+INFO:root:[2/5][79/100] loss: 0.017138634
+INFO:root:acc: 0.6848, tpr: 0.697, tnr: 0.678, ppv: 0.5476, npv: 0.8, auc: 0.7232
+INFO:root:[validation] The current loss: 0.21898619, acc*auc: 0.4952
+INFO:root:trigger times: 1
+INFO:root:[2/5][80/100] loss: 0.017455863
+INFO:root:acc: 0.6739, tpr: 0.6061, tnr: 0.7119, ppv: 0.5405, npv: 0.7636, auc: 0.718
+INFO:root:[validation] The current loss: 0.22258924, acc*auc: 0.4839
+INFO:root:trigger times: 2
+INFO:root:[2/5][81/100] loss: 0.017425985
+INFO:root:acc: 0.6196, tpr: 0.3333, tnr: 0.7797, ppv: 0.4583, npv: 0.6765, auc: 0.7262
+INFO:root:[validation] The current loss: 0.24877776, acc*auc: 0.45
+INFO:root:trigger times: 3
+INFO:root:[2/5][82/100] loss: 0.017703197
+INFO:root:acc: 0.7174, tpr: 0.6667, tnr: 0.7458, ppv: 0.5946, npv: 0.8, auc: 0.7483
+INFO:root:[validation] The current loss: 0.21350292, acc*auc: 0.5368
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[2/5][83/100] loss: 0.019051128
+INFO:root:acc: 0.4239, tpr: 1.0, tnr: 0.1017, ppv: 0.3837, npv: 1.0, auc: 0.5593
+INFO:root:[validation] The current loss: 0.30233551, acc*auc: 0.2371
+INFO:root:trigger times: 1
+INFO:root:[2/5][84/100] loss: 0.018679953
+INFO:root:acc: 0.6413, tpr: 0.4848, tnr: 0.7288, ppv: 0.5, npv: 0.7167, auc: 0.718
+INFO:root:[validation] The current loss: 0.22292553, acc*auc: 0.4605
+INFO:root:[2/5][85/100] loss: 0.017756666
+INFO:root:acc: 0.6957, tpr: 0.2424, tnr: 0.9492, ppv: 0.7273, npv: 0.6914, auc: 0.7853
+INFO:root:[validation] The current loss: 0.28365541, acc*auc: 0.5463
+INFO:root:trigger times: 1
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[2/5][86/100] loss: 0.017849707
+INFO:root:acc: 0.6848, tpr: 0.4242, tnr: 0.8305, ppv: 0.5833, npv: 0.7206, auc: 0.7468
+INFO:root:[validation] The current loss: 0.24355054, acc*auc: 0.5114
+INFO:root:[2/5][87/100] loss: 0.018460185
+INFO:root:acc: 0.5543, tpr: 0.7576, tnr: 0.4407, ppv: 0.431, npv: 0.7647, auc: 0.662
+INFO:root:[validation] The current loss: 0.24299232, acc*auc: 0.367
+INFO:root:[2/5][88/100] loss: 0.018331935
+INFO:root:acc: 0.5543, tpr: 0.5758, tnr: 0.5424, ppv: 0.413, npv: 0.6957, auc: 0.5819
+INFO:root:[validation] The current loss: 0.28725327, acc*auc: 0.3226
+INFO:root:trigger times: 1
+INFO:root:[2/5][89/100] loss: 0.018330166
+INFO:root:acc: 0.7174, tpr: 0.4242, tnr: 0.8814, ppv: 0.6667, npv: 0.7324, auc: 0.754
+INFO:root:[validation] The current loss: 0.22815527, acc*auc: 0.5409
+INFO:root:[2/5][90/100] loss: 0.01776663
+INFO:root:acc: 0.6848, tpr: 0.4848, tnr: 0.7966, ppv: 0.5714, npv: 0.7344, auc: 0.7586
+INFO:root:[validation] The current loss: 0.23061785, acc*auc: 0.5195
+INFO:root:trigger times: 1
+INFO:root:[2/5][91/100] loss: 0.01713808
+INFO:root:acc: 0.6413, tpr: 0.3636, tnr: 0.7966, ppv: 0.5, npv: 0.6912, auc: 0.755
+INFO:root:[validation] The current loss: 0.21798904, acc*auc: 0.4842
+INFO:root:[2/5][92/100] loss: 0.017053234
+INFO:root:acc: 0.6848, tpr: 0.1212, tnr: 1.0, ppv: 1.0, npv: 0.6705, auc: 0.7545
+INFO:root:[validation] The current loss: 0.34108429, acc*auc: 0.5167
+INFO:root:trigger times: 1
+INFO:root:[2/5][93/100] loss: 0.016939199
+INFO:root:acc: 0.6848, tpr: 0.3636, tnr: 0.8644, ppv: 0.6, npv: 0.7083, auc: 0.7232
+INFO:root:[validation] The current loss: 0.26236572, acc*auc: 0.4952
+INFO:root:[2/5][94/100] loss: 0.017064872
+INFO:root:acc: 0.6522, tpr: 0.3939, tnr: 0.7966, ppv: 0.52, npv: 0.7015, auc: 0.736
+INFO:root:[validation] The current loss: 0.24059465, acc*auc: 0.48
+INFO:root:[2/5][95/100] loss: 0.016801987
+INFO:root:acc: 0.6957, tpr: 0.6364, tnr: 0.7288, ppv: 0.5676, npv: 0.7818, auc: 0.7422
+INFO:root:[validation] The current loss: 0.21708564, acc*auc: 0.5163
+INFO:root:[2/5][96/100] loss: 0.016903406
+INFO:root:acc: 0.6957, tpr: 0.6364, tnr: 0.7288, ppv: 0.5676, npv: 0.7818, auc: 0.7355
+INFO:root:[validation] The current loss: 0.22339775, acc*auc: 0.5116
+INFO:root:trigger times: 1
+INFO:root:[2/5][97/100] loss: 0.016270554
+INFO:root:acc: 0.6848, tpr: 0.5758, tnr: 0.7458, ppv: 0.5588, npv: 0.7586, auc: 0.7463
+INFO:root:[validation] The current loss: 0.21709194, acc*auc: 0.511
+INFO:root:[2/5][98/100] loss: 0.016475763
+INFO:root:acc: 0.6848, tpr: 0.5758, tnr: 0.7458, ppv: 0.5588, npv: 0.7586, auc: 0.7442
+INFO:root:[validation] The current loss: 0.21563054, acc*auc: 0.5096
+INFO:root:[2/5][99/100] loss: 0.016652761
+INFO:root:acc: 0.6848, tpr: 0.5758, tnr: 0.7458, ppv: 0.5588, npv: 0.7586, auc: 0.7422
+INFO:root:[validation] The current loss: 0.21726921, acc*auc: 0.5082
+INFO:root:trigger times: 1
+INFO:root:stopping! Epoch = 100
+WARNING:root:weights = [1, 2]
+INFO:root:data sampling method: no-sampling
+INFO:root:training set size: 819
+INFO:root:data sampling method: no-sampling
+INFO:root:val set size: 92
+INFO:root:[3/5][0/100] loss: 0.028235426
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5799
+INFO:root:[validation] The current loss: 0.23791512, acc*auc: 0.3719
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[3/5][1/100] loss: 0.028214509
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5722
+INFO:root:[validation] The current loss: 0.23810715, acc*auc: 0.3669
+INFO:root:trigger times: 1
+INFO:root:[3/5][2/100] loss: 0.028198705
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5362
+INFO:root:[validation] The current loss: 0.23781771, acc*auc: 0.3439
+INFO:root:[3/5][3/100] loss: 0.028001996
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5074
+INFO:root:[validation] The current loss: 0.23776382, acc*auc: 0.3254
+INFO:root:[3/5][4/100] loss: 0.028100073
+INFO:root:acc: 0.6413, tpr: 0.0303, tnr: 0.9831, ppv: 0.5, npv: 0.6444, auc: 0.5229
+INFO:root:[validation] The current loss: 0.23643084, acc*auc: 0.3353
+INFO:root:[3/5][5/100] loss: 0.027999008
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5342
+INFO:root:[validation] The current loss: 0.2354999, acc*auc: 0.3426
+INFO:root:[3/5][6/100] loss: 0.027911579
+INFO:root:acc: 0.6522, tpr: 0.0303, tnr: 1.0, ppv: 1.0, npv: 0.6484, auc: 0.548
+INFO:root:[validation] The current loss: 0.23573944, acc*auc: 0.3574
+INFO:root:trigger times: 1
+INFO:root:[3/5][7/100] loss: 0.027895032
+INFO:root:acc: 0.6522, tpr: 0.0303, tnr: 1.0, ppv: 1.0, npv: 0.6484, auc: 0.5367
+INFO:root:[validation] The current loss: 0.23520737, acc*auc: 0.35
+INFO:root:[3/5][8/100] loss: 0.027792487
+INFO:root:acc: 0.6739, tpr: 0.1515, tnr: 0.9661, ppv: 0.7143, npv: 0.6706, auc: 0.5876
+INFO:root:[validation] The current loss: 0.23294429, acc*auc: 0.396
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[3/5][9/100] loss: 0.02782383
+INFO:root:acc: 0.6413, tpr: 0.1212, tnr: 0.9322, ppv: 0.5, npv: 0.6548, auc: 0.5357
+INFO:root:[validation] The current loss: 0.23406237, acc*auc: 0.3435
+INFO:root:trigger times: 1
+INFO:root:[3/5][10/100] loss: 0.027676874
+INFO:root:acc: 0.6413, tpr: 0.1212, tnr: 0.9322, ppv: 0.5, npv: 0.6548, auc: 0.5501
+INFO:root:[validation] The current loss: 0.23663651, acc*auc: 0.3528
+INFO:root:trigger times: 2
+INFO:root:[3/5][11/100] loss: 0.027648026
+INFO:root:acc: 0.6522, tpr: 0.2121, tnr: 0.8983, ppv: 0.5385, npv: 0.6709, auc: 0.6174
+INFO:root:[validation] The current loss: 0.23146964, acc*auc: 0.4026
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[3/5][12/100] loss: 0.027594307
+INFO:root:acc: 0.6522, tpr: 0.1818, tnr: 0.9153, ppv: 0.5455, npv: 0.6667, auc: 0.6323
+INFO:root:[validation] The current loss: 0.2295573, acc*auc: 0.4123
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[3/5][13/100] loss: 0.027615407
+INFO:root:acc: 0.6957, tpr: 0.1515, tnr: 1.0, ppv: 1.0, npv: 0.6782, auc: 0.6482
+INFO:root:[validation] The current loss: 0.23170552, acc*auc: 0.4509
+INFO:root:trigger times: 1
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[3/5][14/100] loss: 0.027370569
+INFO:root:acc: 0.7065, tpr: 0.4848, tnr: 0.8305, ppv: 0.6154, npv: 0.7424, auc: 0.7072
+INFO:root:[validation] The current loss: 0.22558359, acc*auc: 0.4997
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[3/5][15/100] loss: 0.027380596
+INFO:root:acc: 0.6196, tpr: 0.6364, tnr: 0.6102, ppv: 0.4773, npv: 0.75, auc: 0.7149
+INFO:root:[validation] The current loss: 0.22160733, acc*auc: 0.443
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+INFO:root:[3/5][16/100] loss: 0.027167459
+INFO:root:acc: 0.6957, tpr: 0.3333, tnr: 0.8983, ppv: 0.6471, npv: 0.7067, auc: 0.6687
+INFO:root:[validation] The current loss: 0.22659773, acc*auc: 0.4652
+INFO:root:trigger times: 1
+INFO:root:[3/5][17/100] loss: 0.026944471
+INFO:root:acc: 0.663, tpr: 0.5455, tnr: 0.7288, ppv: 0.5294, npv: 0.7414, auc: 0.6769
+INFO:root:[validation] The current loss: 0.21948956, acc*auc: 0.4488
+INFO:root:[3/5][18/100] loss: 0.026651758
+INFO:root:acc: 0.5978, tpr: 0.7879, tnr: 0.4915, ppv: 0.4643, npv: 0.8056, auc: 0.7139
+INFO:root:[validation] The current loss: 0.21821639, acc*auc: 0.4268
+INFO:root:[3/5][19/100] loss: 0.02640408
+INFO:root:acc: 0.7065, tpr: 0.5152, tnr: 0.8136, ppv: 0.6071, npv: 0.75, auc: 0.7262
+INFO:root:[validation] The current loss: 0.21965332, acc*auc: 0.5131
+INFO:root:trigger times: 1
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[3/5][20/100] loss: 0.026349026
+INFO:root:acc: 0.6522, tpr: 0.4545, tnr: 0.7627, ppv: 0.5172, npv: 0.7143, auc: 0.6944
+INFO:root:[validation] The current loss: 0.216969, acc*auc: 0.4529
+INFO:root:[3/5][21/100] loss: 0.026011595
+INFO:root:acc: 0.663, tpr: 0.5152, tnr: 0.7458, ppv: 0.5312, npv: 0.7333, auc: 0.7196
+INFO:root:[validation] The current loss: 0.21334125, acc*auc: 0.4771
+INFO:root:[3/5][22/100] loss: 0.025790103
+INFO:root:acc: 0.6304, tpr: 0.4848, tnr: 0.7119, ppv: 0.4848, npv: 0.7119, auc: 0.7232
+INFO:root:[validation] The current loss: 0.21371522, acc*auc: 0.4559
+INFO:root:trigger times: 1
+INFO:root:[3/5][23/100] loss: 0.025548863
+INFO:root:acc: 0.6848, tpr: 0.4848, tnr: 0.7966, ppv: 0.5714, npv: 0.7344, auc: 0.7221
+INFO:root:[validation] The current loss: 0.21426735, acc*auc: 0.4945
+INFO:root:trigger times: 2
+INFO:root:[3/5][24/100] loss: 0.025821291
+INFO:root:acc: 0.6739, tpr: 0.4848, tnr: 0.7797, ppv: 0.5517, npv: 0.7302, auc: 0.7216
+INFO:root:[validation] The current loss: 0.21320032, acc*auc: 0.4863
+INFO:root:[3/5][25/100] loss: 0.025592215
+INFO:root:acc: 0.6522, tpr: 0.4545, tnr: 0.7627, ppv: 0.5172, npv: 0.7143, auc: 0.7119
+INFO:root:[validation] The current loss: 0.2147295, acc*auc: 0.4643
+INFO:root:trigger times: 1
+INFO:root:[3/5][26/100] loss: 0.025557403
+INFO:root:acc: 0.6739, tpr: 0.3636, tnr: 0.8475, ppv: 0.5714, npv: 0.7042, auc: 0.6949
+INFO:root:[validation] The current loss: 0.21889268, acc*auc: 0.4683
+INFO:root:trigger times: 2
+INFO:root:[3/5][27/100] loss: 0.025611504
+INFO:root:acc: 0.6413, tpr: 0.4545, tnr: 0.7458, ppv: 0.5, npv: 0.7097, auc: 0.717
+INFO:root:[validation] The current loss: 0.21195049, acc*auc: 0.4598
+INFO:root:[3/5][28/100] loss: 0.02529825
+INFO:root:acc: 0.6739, tpr: 0.6061, tnr: 0.7119, ppv: 0.5405, npv: 0.7636, auc: 0.7242
+INFO:root:[validation] The current loss: 0.2113382, acc*auc: 0.488
+INFO:root:[3/5][29/100] loss: 0.025319938
+INFO:root:acc: 0.6522, tpr: 0.5455, tnr: 0.7119, ppv: 0.5143, npv: 0.7368, auc: 0.7134
+INFO:root:[validation] The current loss: 0.21388067, acc*auc: 0.4653
+INFO:root:trigger times: 1
+INFO:root:[3/5][30/100] loss: 0.02534365
+INFO:root:acc: 0.663, tpr: 0.3939, tnr: 0.8136, ppv: 0.5417, npv: 0.7059, auc: 0.718
+INFO:root:[validation] The current loss: 0.21206672, acc*auc: 0.4761
+INFO:root:[3/5][31/100] loss: 0.024612098
+INFO:root:acc: 0.6957, tpr: 0.4848, tnr: 0.8136, ppv: 0.5926, npv: 0.7385, auc: 0.7519
+INFO:root:[validation] The current loss: 0.20744, acc*auc: 0.5231
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[3/5][32/100] loss: 0.024499365
+INFO:root:acc: 0.7283, tpr: 0.303, tnr: 0.9661, ppv: 0.8333, npv: 0.7125, auc: 0.7386
+INFO:root:[validation] The current loss: 0.2281265, acc*auc: 0.5379
+INFO:root:trigger times: 1
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[3/5][33/100] loss: 0.024999363
+INFO:root:acc: 0.7391, tpr: 0.4242, tnr: 0.9153, ppv: 0.7368, npv: 0.7397, auc: 0.6985
+INFO:root:[validation] The current loss: 0.22720695, acc*auc: 0.5163
+INFO:root:[3/5][34/100] loss: 0.025095035
+INFO:root:acc: 0.6739, tpr: 0.3939, tnr: 0.8305, ppv: 0.5652, npv: 0.7101, auc: 0.6477
+INFO:root:[validation] The current loss: 0.24770613, acc*auc: 0.4365
+INFO:root:trigger times: 1
+INFO:root:[3/5][35/100] loss: 0.02453775
+INFO:root:acc: 0.5761, tpr: 0.697, tnr: 0.5085, ppv: 0.4423, npv: 0.75, auc: 0.6908
+INFO:root:[validation] The current loss: 0.21721753, acc*auc: 0.398
+INFO:root:[3/5][36/100] loss: 0.023866038
+INFO:root:acc: 0.6957, tpr: 0.6061, tnr: 0.7458, ppv: 0.5714, npv: 0.7719, auc: 0.7139
+INFO:root:[validation] The current loss: 0.21308462, acc*auc: 0.4966
+INFO:root:[3/5][37/100] loss: 0.023940928
+INFO:root:acc: 0.6848, tpr: 0.303, tnr: 0.8983, ppv: 0.625, npv: 0.6974, auc: 0.6554
+INFO:root:[validation] The current loss: 0.25547775, acc*auc: 0.4488
+INFO:root:trigger times: 1
+INFO:root:[3/5][38/100] loss: 0.022488105
+INFO:root:acc: 0.5217, tpr: 0.8182, tnr: 0.3559, ppv: 0.4154, npv: 0.7778, auc: 0.6271
+INFO:root:[validation] The current loss: 0.22858846, acc*auc: 0.3272
+INFO:root:[3/5][39/100] loss: 0.022804563
+INFO:root:acc: 0.7174, tpr: 0.5152, tnr: 0.8305, ppv: 0.6296, npv: 0.7538, auc: 0.7314
+INFO:root:[validation] The current loss: 0.21269629, acc*auc: 0.5247
+INFO:root:[3/5][40/100] loss: 0.021771615
+INFO:root:acc: 0.6522, tpr: 0.5758, tnr: 0.6949, ppv: 0.5135, npv: 0.7455, auc: 0.717
+INFO:root:[validation] The current loss: 0.21345692, acc*auc: 0.4676
+INFO:root:trigger times: 1
+INFO:root:[3/5][41/100] loss: 0.02183911
+INFO:root:acc: 0.4674, tpr: 0.9697, tnr: 0.1864, ppv: 0.4, npv: 0.9167, auc: 0.6153
+INFO:root:[validation] The current loss: 0.25862374, acc*auc: 0.2876
+INFO:root:trigger times: 2
+INFO:root:[3/5][42/100] loss: 0.02104953
+INFO:root:acc: 0.663, tpr: 0.1212, tnr: 0.9661, ppv: 0.6667, npv: 0.6628, auc: 0.7442
+INFO:root:[validation] The current loss: 0.26406378, acc*auc: 0.4935
+INFO:root:trigger times: 3
+INFO:root:[3/5][43/100] loss: 0.02076942
+INFO:root:acc: 0.663, tpr: 0.697, tnr: 0.6441, ppv: 0.5227, npv: 0.7917, auc: 0.6918
+INFO:root:[validation] The current loss: 0.2165958, acc*auc: 0.4587
+INFO:root:[3/5][44/100] loss: 0.02064388
+INFO:root:acc: 0.6196, tpr: 0.5152, tnr: 0.678, ppv: 0.4722, npv: 0.7143, auc: 0.6985
+INFO:root:[validation] The current loss: 0.21691505, acc*auc: 0.4328
+INFO:root:trigger times: 1
+INFO:root:[3/5][45/100] loss: 0.02007631
+INFO:root:acc: 0.6739, tpr: 0.697, tnr: 0.661, ppv: 0.5349, npv: 0.7959, auc: 0.6959
+INFO:root:[validation] The current loss: 0.21598237, acc*auc: 0.469
+INFO:root:[3/5][46/100] loss: 0.019748975
+INFO:root:acc: 0.6413, tpr: 0.7576, tnr: 0.5763, ppv: 0.5, npv: 0.8095, auc: 0.6877
+INFO:root:[validation] The current loss: 0.21888053, acc*auc: 0.441
+INFO:root:trigger times: 1
+INFO:root:[3/5][47/100] loss: 0.019571712
+INFO:root:acc: 0.6848, tpr: 0.4242, tnr: 0.8305, ppv: 0.5833, npv: 0.7206, auc: 0.7227
+INFO:root:[validation] The current loss: 0.22428301, acc*auc: 0.4949
+INFO:root:trigger times: 2
+INFO:root:[3/5][48/100] loss: 0.020080861
+INFO:root:acc: 0.6848, tpr: 0.6061, tnr: 0.7288, ppv: 0.5556, npv: 0.7679, auc: 0.7052
+INFO:root:[validation] The current loss: 0.2177453, acc*auc: 0.4829
+INFO:root:[3/5][49/100] loss: 0.019857671
+INFO:root:acc: 0.6522, tpr: 0.5455, tnr: 0.7119, ppv: 0.5143, npv: 0.7368, auc: 0.7088
+INFO:root:[validation] The current loss: 0.21500868, acc*auc: 0.4622
+INFO:root:[3/5][50/100] loss: 0.019052923
+INFO:root:acc: 0.6522, tpr: 0.5152, tnr: 0.7288, ppv: 0.5152, npv: 0.7288, auc: 0.7119
+INFO:root:[validation] The current loss: 0.21394818, acc*auc: 0.4643
+INFO:root:[3/5][51/100] loss: 0.019412921
+INFO:root:acc: 0.663, tpr: 0.5455, tnr: 0.7288, ppv: 0.5294, npv: 0.7414, auc: 0.7149
+INFO:root:[validation] The current loss: 0.21499101, acc*auc: 0.474
+INFO:root:trigger times: 1
+INFO:root:[3/5][52/100] loss: 0.019391123
+INFO:root:acc: 0.6522, tpr: 0.5758, tnr: 0.6949, ppv: 0.5135, npv: 0.7455, auc: 0.7201
+INFO:root:[validation] The current loss: 0.21378025, acc*auc: 0.4696
+INFO:root:[3/5][53/100] loss: 0.018633669
+INFO:root:acc: 0.6304, tpr: 0.5152, tnr: 0.6949, ppv: 0.4857, npv: 0.7193, auc: 0.6687
+INFO:root:[validation] The current loss: 0.22379609, acc*auc: 0.4216
+INFO:root:trigger times: 1
+INFO:root:[3/5][54/100] loss: 0.019261669
+INFO:root:acc: 0.6522, tpr: 0.697, tnr: 0.6271, ppv: 0.5111, npv: 0.7872, auc: 0.7083
+INFO:root:[validation] The current loss: 0.21526973, acc*auc: 0.4619
+INFO:root:[3/5][55/100] loss: 0.019274953
+INFO:root:acc: 0.663, tpr: 0.3636, tnr: 0.8305, ppv: 0.5455, npv: 0.7, auc: 0.6852
+INFO:root:[validation] The current loss: 0.23039894, acc*auc: 0.4543
+INFO:root:trigger times: 1
+INFO:root:[3/5][56/100] loss: 0.019655039
+INFO:root:acc: 0.6739, tpr: 0.7879, tnr: 0.6102, ppv: 0.5306, npv: 0.8372, auc: 0.6857
+INFO:root:[validation] The current loss: 0.2223662, acc*auc: 0.4621
+INFO:root:[3/5][57/100] loss: 0.019426172
+INFO:root:acc: 0.6522, tpr: 0.3636, tnr: 0.8136, ppv: 0.5217, npv: 0.6957, auc: 0.7206
+INFO:root:[validation] The current loss: 0.23113281, acc*auc: 0.47
+INFO:root:trigger times: 1
+INFO:root:[3/5][58/100] loss: 0.01910071
+INFO:root:acc: 0.6196, tpr: 0.9697, tnr: 0.4237, ppv: 0.4848, npv: 0.9615, auc: 0.6636
+INFO:root:[validation] The current loss: 0.23495559, acc*auc: 0.4111
+INFO:root:trigger times: 2
+INFO:root:[3/5][59/100] loss: 0.019767619
+INFO:root:acc: 0.6413, tpr: 0.5758, tnr: 0.678, ppv: 0.5, npv: 0.7407, auc: 0.6939
+INFO:root:[validation] The current loss: 0.21871259, acc*auc: 0.445
+INFO:root:[3/5][60/100] loss: 0.02024628
+INFO:root:acc: 0.6413, tpr: 0.697, tnr: 0.6102, ppv: 0.5, npv: 0.7826, auc: 0.6939
+INFO:root:[validation] The current loss: 0.22825337, acc*auc: 0.445
+INFO:root:trigger times: 1
+INFO:root:[3/5][61/100] loss: 0.019607452
+INFO:root:acc: 0.6957, tpr: 0.2727, tnr: 0.9322, ppv: 0.6923, npv: 0.6962, auc: 0.6944
+INFO:root:[validation] The current loss: 0.26315536, acc*auc: 0.4831
+INFO:root:trigger times: 2
+INFO:root:[3/5][62/100] loss: 0.019387772
+INFO:root:acc: 0.5435, tpr: 0.8485, tnr: 0.3729, ppv: 0.4308, npv: 0.8148, auc: 0.6882
+INFO:root:[validation] The current loss: 0.23620234, acc*auc: 0.374
+INFO:root:[3/5][63/100] loss: 0.021469229
+INFO:root:acc: 0.5652, tpr: 0.8788, tnr: 0.3898, ppv: 0.4462, npv: 0.8519, auc: 0.6888
+INFO:root:[validation] The current loss: 0.22366315, acc*auc: 0.3893
+INFO:root:[3/5][64/100] loss: 0.019535343
+INFO:root:acc: 0.6739, tpr: 0.697, tnr: 0.661, ppv: 0.5349, npv: 0.7959, auc: 0.7011
+INFO:root:[validation] The current loss: 0.21562594, acc*auc: 0.4725
+INFO:root:[3/5][65/100] loss: 0.01922594
+INFO:root:acc: 0.4674, tpr: 0.9697, tnr: 0.1864, ppv: 0.4, npv: 0.9167, auc: 0.5706
+INFO:root:[validation] The current loss: 0.28559808, acc*auc: 0.2667
+INFO:root:trigger times: 1
+INFO:root:[3/5][66/100] loss: 0.017994641
+INFO:root:acc: 0.6304, tpr: 0.6364, tnr: 0.6271, ppv: 0.4884, npv: 0.7551, auc: 0.6754
+INFO:root:[validation] The current loss: 0.23814741, acc*auc: 0.4258
+INFO:root:[3/5][67/100] loss: 0.01795867
+INFO:root:acc: 0.587, tpr: 0.8788, tnr: 0.4237, ppv: 0.4603, npv: 0.8621, auc: 0.6554
+INFO:root:[validation] The current loss: 0.25095796, acc*auc: 0.3847
+INFO:root:trigger times: 1
+INFO:root:[3/5][68/100] loss: 0.017818524
+INFO:root:acc: 0.6413, tpr: 0.5758, tnr: 0.678, ppv: 0.5, npv: 0.7407, auc: 0.6697
+INFO:root:[validation] The current loss: 0.23359468, acc*auc: 0.4295
+INFO:root:[3/5][69/100] loss: 0.01808908
+INFO:root:acc: 0.6196, tpr: 0.5152, tnr: 0.678, ppv: 0.4722, npv: 0.7143, auc: 0.6677
+INFO:root:[validation] The current loss: 0.24705819, acc*auc: 0.4137
+INFO:root:trigger times: 1
+INFO:root:[3/5][70/100] loss: 0.018694762
+INFO:root:acc: 0.6304, tpr: 0.5455, tnr: 0.678, ppv: 0.4865, npv: 0.7273, auc: 0.6775
+INFO:root:[validation] The current loss: 0.23629816, acc*auc: 0.4271
+INFO:root:[3/5][71/100] loss: 0.017229225
+INFO:root:acc: 0.6522, tpr: 0.5758, tnr: 0.6949, ppv: 0.5135, npv: 0.7455, auc: 0.679
+INFO:root:[validation] The current loss: 0.23580433, acc*auc: 0.4428
+INFO:root:[3/5][72/100] loss: 0.018511778
+INFO:root:acc: 0.6087, tpr: 0.4545, tnr: 0.6949, ppv: 0.4545, npv: 0.6949, auc: 0.6821
+INFO:root:[validation] The current loss: 0.24484902, acc*auc: 0.4152
+INFO:root:trigger times: 1
+INFO:root:[3/5][73/100] loss: 0.017167737
+INFO:root:acc: 0.5978, tpr: 0.4242, tnr: 0.6949, ppv: 0.4375, npv: 0.6833, auc: 0.6744
+INFO:root:[validation] The current loss: 0.23831974, acc*auc: 0.4032
+INFO:root:[3/5][74/100] loss: 0.016263276
+INFO:root:acc: 0.6304, tpr: 0.4848, tnr: 0.7119, ppv: 0.4848, npv: 0.7119, auc: 0.6841
+INFO:root:[validation] The current loss: 0.2347955, acc*auc: 0.4313
+INFO:root:[3/5][75/100] loss: 0.017043394
+INFO:root:acc: 0.6304, tpr: 0.4545, tnr: 0.7288, ppv: 0.4839, npv: 0.7049, auc: 0.6903
+INFO:root:[validation] The current loss: 0.24078751, acc*auc: 0.4352
+INFO:root:trigger times: 1
+INFO:root:[3/5][76/100] loss: 0.017349539
+INFO:root:acc: 0.6413, tpr: 0.5758, tnr: 0.678, ppv: 0.5, npv: 0.7407, auc: 0.679
+INFO:root:[validation] The current loss: 0.2328497, acc*auc: 0.4354
+INFO:root:[3/5][77/100] loss: 0.017486912
+INFO:root:acc: 0.6304, tpr: 0.4848, tnr: 0.7119, ppv: 0.4848, npv: 0.7119, auc: 0.6739
+INFO:root:[validation] The current loss: 0.23591762, acc*auc: 0.4248
+INFO:root:trigger times: 1
+INFO:root:[3/5][78/100] loss: 0.017221011
+INFO:root:acc: 0.6413, tpr: 0.697, tnr: 0.6102, ppv: 0.5, npv: 0.7826, auc: 0.6579
+INFO:root:[validation] The current loss: 0.235516, acc*auc: 0.4219
+INFO:root:[3/5][79/100] loss: 0.016419127
+INFO:root:acc: 0.6739, tpr: 0.5758, tnr: 0.7288, ppv: 0.5429, npv: 0.7544, auc: 0.7108
+INFO:root:[validation] The current loss: 0.22256639, acc*auc: 0.479
+INFO:root:[3/5][80/100] loss: 0.01683131
+INFO:root:acc: 0.6522, tpr: 0.6667, tnr: 0.6441, ppv: 0.5116, npv: 0.7755, auc: 0.6805
+INFO:root:[validation] The current loss: 0.23385226, acc*auc: 0.4438
+INFO:root:trigger times: 1
+INFO:root:[3/5][81/100] loss: 0.01732138
+INFO:root:acc: 0.663, tpr: 0.303, tnr: 0.8644, ppv: 0.5556, npv: 0.6892, auc: 0.7252
+INFO:root:[validation] The current loss: 0.25209007, acc*auc: 0.4809
+INFO:root:trigger times: 2
+INFO:root:[3/5][82/100] loss: 0.017471547
+INFO:root:acc: 0.6196, tpr: 0.2121, tnr: 0.8475, ppv: 0.4375, npv: 0.6579, auc: 0.6692
+INFO:root:[validation] The current loss: 0.27813399, acc*auc: 0.4146
+INFO:root:trigger times: 3
+INFO:root:[3/5][83/100] loss: 0.018067584
+INFO:root:acc: 0.5543, tpr: 0.8182, tnr: 0.4068, ppv: 0.4355, npv: 0.8, auc: 0.6477
+INFO:root:[validation] The current loss: 0.25404034, acc*auc: 0.359
+INFO:root:[3/5][84/100] loss: 0.018142163
+INFO:root:acc: 0.6196, tpr: 0.6061, tnr: 0.6271, ppv: 0.4762, npv: 0.74, auc: 0.6523
+INFO:root:[validation] The current loss: 0.24745252, acc*auc: 0.4041
+INFO:root:[3/5][85/100] loss: 0.017005673
+INFO:root:acc: 0.6196, tpr: 0.5455, tnr: 0.661, ppv: 0.4737, npv: 0.7222, auc: 0.6436
+INFO:root:[validation] The current loss: 0.2487821, acc*auc: 0.3987
+INFO:root:trigger times: 1
+INFO:root:[3/5][86/100] loss: 0.017580866
+INFO:root:acc: 0.6087, tpr: 0.6061, tnr: 0.6102, ppv: 0.4651, npv: 0.7347, auc: 0.6389
+INFO:root:[validation] The current loss: 0.25884125, acc*auc: 0.3889
+INFO:root:trigger times: 2
+INFO:root:[3/5][87/100] loss: 0.018517681
+INFO:root:acc: 0.5543, tpr: 0.7576, tnr: 0.4407, ppv: 0.431, npv: 0.7647, auc: 0.6204
+INFO:root:[validation] The current loss: 0.250802, acc*auc: 0.3439
+INFO:root:[3/5][88/100] loss: 0.017674987
+INFO:root:acc: 0.4022, tpr: 0.9394, tnr: 0.1017, ppv: 0.369, npv: 0.75, auc: 0.5074
+INFO:root:[validation] The current loss: 0.36354926, acc*auc: 0.2041
+INFO:root:trigger times: 1
+INFO:root:[3/5][89/100] loss: 0.017539503
+INFO:root:acc: 0.6087, tpr: 0.5455, tnr: 0.6441, ppv: 0.4615, npv: 0.717, auc: 0.6163
+INFO:root:[validation] The current loss: 0.25759132, acc*auc: 0.3752
+INFO:root:[3/5][90/100] loss: 0.017197757
+INFO:root:acc: 0.6413, tpr: 0.6667, tnr: 0.6271, ppv: 0.5, npv: 0.7708, auc: 0.6389
+INFO:root:[validation] The current loss: 0.24715463, acc*auc: 0.4097
+INFO:root:[3/5][91/100] loss: 0.016717131
+INFO:root:acc: 0.5326, tpr: 0.3333, tnr: 0.6441, ppv: 0.3438, npv: 0.6333, auc: 0.622
+INFO:root:[validation] The current loss: 0.26693548, acc*auc: 0.3313
+INFO:root:trigger times: 1
+INFO:root:[3/5][92/100] loss: 0.016575478
+INFO:root:acc: 0.6522, tpr: 0.09091, tnr: 0.9661, ppv: 0.6, npv: 0.6552, auc: 0.6841
+INFO:root:[validation] The current loss: 0.36253403, acc*auc: 0.4462
+INFO:root:trigger times: 2
+INFO:root:[3/5][93/100] loss: 0.016230038
+INFO:root:acc: 0.6739, tpr: 0.303, tnr: 0.8814, ppv: 0.5882, npv: 0.6933, auc: 0.6862
+INFO:root:[validation] The current loss: 0.31214344, acc*auc: 0.4624
+INFO:root:[3/5][94/100] loss: 0.016687289
+INFO:root:acc: 0.5761, tpr: 0.4545, tnr: 0.6441, ppv: 0.4167, npv: 0.6786, auc: 0.643
+INFO:root:[validation] The current loss: 0.26528329, acc*auc: 0.3704
+INFO:root:[3/5][95/100] loss: 0.015779657
+INFO:root:acc: 0.5652, tpr: 0.4242, tnr: 0.6441, ppv: 0.4, npv: 0.6667, auc: 0.6477
+INFO:root:[validation] The current loss: 0.27555533, acc*auc: 0.3661
+INFO:root:trigger times: 1
+INFO:root:[3/5][96/100] loss: 0.01635612
+INFO:root:acc: 0.587, tpr: 0.4545, tnr: 0.661, ppv: 0.4286, npv: 0.6842, auc: 0.6451
+INFO:root:[validation] The current loss: 0.27371438, acc*auc: 0.3786
+INFO:root:[3/5][97/100] loss: 0.015438107
+INFO:root:acc: 0.5652, tpr: 0.4242, tnr: 0.6441, ppv: 0.4, npv: 0.6667, auc: 0.6389
+INFO:root:[validation] The current loss: 0.27025306, acc*auc: 0.3611
+INFO:root:[3/5][98/100] loss: 0.015873895
+INFO:root:acc: 0.5761, tpr: 0.4545, tnr: 0.6441, ppv: 0.4167, npv: 0.6786, auc: 0.6333
+INFO:root:[validation] The current loss: 0.26223701, acc*auc: 0.3648
+INFO:root:[3/5][99/100] loss: 0.015830321
+INFO:root:acc: 0.5761, tpr: 0.4242, tnr: 0.661, ppv: 0.4118, npv: 0.6724, auc: 0.6394
+INFO:root:[validation] The current loss: 0.26416857, acc*auc: 0.3684
+INFO:root:trigger times: 1
+INFO:root:stopping! Epoch = 100
+WARNING:root:weights = [1, 2]
+INFO:root:data sampling method: no-sampling
+INFO:root:training set size: 819
+INFO:root:data sampling method: no-sampling
+INFO:root:val set size: 92
+INFO:root:[4/5][0/100] loss: 0.028235424
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5799
+INFO:root:[validation] The current loss: 0.23791513, acc*auc: 0.3719
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[4/5][1/100] loss: 0.028214512
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5722
+INFO:root:[validation] The current loss: 0.23810719, acc*auc: 0.3669
+INFO:root:trigger times: 1
+INFO:root:[4/5][2/100] loss: 0.028198689
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5362
+INFO:root:[validation] The current loss: 0.23781777, acc*auc: 0.3439
+INFO:root:[4/5][3/100] loss: 0.028002024
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5074
+INFO:root:[validation] The current loss: 0.23776237, acc*auc: 0.3254
+INFO:root:[4/5][4/100] loss: 0.02810011
+INFO:root:acc: 0.6413, tpr: 0.0303, tnr: 0.9831, ppv: 0.5, npv: 0.6444, auc: 0.5218
+INFO:root:[validation] The current loss: 0.23644275, acc*auc: 0.3347
+INFO:root:[4/5][5/100] loss: 0.027998299
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5342
+INFO:root:[validation] The current loss: 0.23555609, acc*auc: 0.3426
+INFO:root:[4/5][6/100] loss: 0.027902625
+INFO:root:acc: 0.6522, tpr: 0.0303, tnr: 1.0, ppv: 1.0, npv: 0.6484, auc: 0.5295
+INFO:root:[validation] The current loss: 0.23605337, acc*auc: 0.3453
+INFO:root:trigger times: 1
+INFO:root:[4/5][7/100] loss: 0.027870399
+INFO:root:acc: 0.663, tpr: 0.09091, tnr: 0.9831, ppv: 0.75, npv: 0.6591, auc: 0.5526
+INFO:root:[validation] The current loss: 0.23430909, acc*auc: 0.3664
+INFO:root:[4/5][8/100] loss: 0.027796795
+INFO:root:acc: 0.6413, tpr: 0.0, tnr: 1.0, ppv: nan, npv: 0.6413, auc: 0.5372
+INFO:root:[validation] The current loss: 0.23612456, acc*auc: 0.3445
+INFO:root:trigger times: 1
+INFO:root:[4/5][9/100] loss: 0.02781889
+INFO:root:acc: 0.6522, tpr: 0.1212, tnr: 0.9492, ppv: 0.5714, npv: 0.6588, auc: 0.6184
+INFO:root:[validation] The current loss: 0.23214568, acc*auc: 0.4033
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[4/5][10/100] loss: 0.027707461
+INFO:root:acc: 0.663, tpr: 0.06061, tnr: 1.0, ppv: 1.0, npv: 0.6556, auc: 0.5804
+INFO:root:[validation] The current loss: 0.23517608, acc*auc: 0.3848
+INFO:root:trigger times: 1
+INFO:root:[4/5][11/100] loss: 0.027606681
+INFO:root:acc: 0.6087, tpr: 0.5152, tnr: 0.661, ppv: 0.4595, npv: 0.7091, auc: 0.6328
+INFO:root:[validation] The current loss: 0.23105285, acc*auc: 0.3852
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+INFO:root:[4/5][12/100] loss: 0.027673056
+INFO:root:acc: 0.6739, tpr: 0.1515, tnr: 0.9661, ppv: 0.7143, npv: 0.6706, auc: 0.6025
+INFO:root:[validation] The current loss: 0.23303797, acc*auc: 0.406
+INFO:root:trigger times: 1
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[4/5][13/100] loss: 0.027580357
+INFO:root:acc: 0.6522, tpr: 0.2121, tnr: 0.8983, ppv: 0.5385, npv: 0.6709, auc: 0.6482
+INFO:root:[validation] The current loss: 0.2283406, acc*auc: 0.4227
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[4/5][14/100] loss: 0.027323284
+INFO:root:acc: 0.7174, tpr: 0.3333, tnr: 0.9322, ppv: 0.7333, npv: 0.7143, auc: 0.6995
+INFO:root:[validation] The current loss: 0.22330723, acc*auc: 0.5018
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[4/5][15/100] loss: 0.027310854
+INFO:root:acc: 0.6739, tpr: 0.2727, tnr: 0.8983, ppv: 0.6, npv: 0.6883, auc: 0.6846
+INFO:root:[validation] The current loss: 0.22667242, acc*auc: 0.4614
+INFO:root:trigger times: 1
+INFO:root:[4/5][16/100] loss: 0.027217105
+INFO:root:acc: 0.7065, tpr: 0.303, tnr: 0.9322, ppv: 0.7143, npv: 0.7051, auc: 0.6646
+INFO:root:[validation] The current loss: 0.22552051, acc*auc: 0.4696
+INFO:root:[4/5][17/100] loss: 0.026867468
+INFO:root:acc: 0.5978, tpr: 0.7273, tnr: 0.5254, ppv: 0.4615, npv: 0.775, auc: 0.7006
+INFO:root:[validation] The current loss: 0.21987251, acc*auc: 0.4188
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+INFO:root:[4/5][18/100] loss: 0.02652464
+INFO:root:acc: 0.6087, tpr: 0.6061, tnr: 0.6102, ppv: 0.4651, npv: 0.7347, auc: 0.7191
+INFO:root:[validation] The current loss: 0.21752165, acc*auc: 0.4377
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+INFO:root:[4/5][19/100] loss: 0.026332791
+INFO:root:acc: 0.7283, tpr: 0.6364, tnr: 0.7797, ppv: 0.6176, npv: 0.7931, auc: 0.7581
+INFO:root:[validation] The current loss: 0.21828098, acc*auc: 0.5521
+INFO:root:trigger times: 1
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+CRITICAL:root:Recording best acc*auc model. (model/under-sampling/acc_auc_mul)
+INFO:root:[4/5][20/100] loss: 0.026335795
+INFO:root:acc: 0.6957, tpr: 0.4242, tnr: 0.8475, ppv: 0.6087, npv: 0.7246, auc: 0.7216
+INFO:root:[validation] The current loss: 0.21602286, acc*auc: 0.502
+INFO:root:[4/5][21/100] loss: 0.025970629
+INFO:root:acc: 0.6739, tpr: 0.5152, tnr: 0.7627, ppv: 0.5484, npv: 0.7377, auc: 0.7375
+INFO:root:[validation] The current loss: 0.21323357, acc*auc: 0.497
+INFO:root:[4/5][22/100] loss: 0.025637116
+INFO:root:acc: 0.7283, tpr: 0.697, tnr: 0.7458, ppv: 0.6053, npv: 0.8148, auc: 0.736
+INFO:root:[validation] The current loss: 0.21246694, acc*auc: 0.536
+INFO:root:[4/5][23/100] loss: 0.025511157
+INFO:root:acc: 0.7065, tpr: 0.5152, tnr: 0.8136, ppv: 0.6071, npv: 0.75, auc: 0.7252
+INFO:root:[validation] The current loss: 0.21329029, acc*auc: 0.5124
+INFO:root:trigger times: 1
+INFO:root:[4/5][24/100] loss: 0.025843872
+INFO:root:acc: 0.7065, tpr: 0.5152, tnr: 0.8136, ppv: 0.6071, npv: 0.75, auc: 0.7288
+INFO:root:[validation] The current loss: 0.21220963, acc*auc: 0.5149
+INFO:root:[4/5][25/100] loss: 0.025546792
+INFO:root:acc: 0.6957, tpr: 0.4848, tnr: 0.8136, ppv: 0.5926, npv: 0.7385, auc: 0.7237
+INFO:root:[validation] The current loss: 0.21387253, acc*auc: 0.5034
+INFO:root:trigger times: 1
+INFO:root:[4/5][26/100] loss: 0.025454947
+INFO:root:acc: 0.6522, tpr: 0.3636, tnr: 0.8136, ppv: 0.5217, npv: 0.6957, auc: 0.698
+INFO:root:[validation] The current loss: 0.21860644, acc*auc: 0.4552
+INFO:root:trigger times: 2
+INFO:root:[4/5][27/100] loss: 0.025609847
+INFO:root:acc: 0.6957, tpr: 0.5152, tnr: 0.7966, ppv: 0.5862, npv: 0.746, auc: 0.7257
+INFO:root:[validation] The current loss: 0.21256266, acc*auc: 0.5049
+INFO:root:[4/5][28/100] loss: 0.025296569
+INFO:root:acc: 0.7065, tpr: 0.5152, tnr: 0.8136, ppv: 0.6071, npv: 0.75, auc: 0.7201
+INFO:root:[validation] The current loss: 0.21233221, acc*auc: 0.5088
+INFO:root:[4/5][29/100] loss: 0.025418097
+INFO:root:acc: 0.6739, tpr: 0.5758, tnr: 0.7288, ppv: 0.5429, npv: 0.7544, auc: 0.7237
+INFO:root:[validation] The current loss: 0.21602935, acc*auc: 0.4877
+INFO:root:trigger times: 1
+INFO:root:[4/5][30/100] loss: 0.025400943
+INFO:root:acc: 0.6957, tpr: 0.4545, tnr: 0.8305, ppv: 0.6, npv: 0.7313, auc: 0.7273
+INFO:root:[validation] The current loss: 0.21091331, acc*auc: 0.5059
+INFO:root:[4/5][31/100] loss: 0.02492232
+INFO:root:acc: 0.6957, tpr: 0.5152, tnr: 0.7966, ppv: 0.5862, npv: 0.746, auc: 0.7524
+INFO:root:[validation] The current loss: 0.21279295, acc*auc: 0.5234
+INFO:root:trigger times: 1
+INFO:root:[4/5][32/100] loss: 0.02487106
+INFO:root:acc: 0.6848, tpr: 0.4848, tnr: 0.7966, ppv: 0.5714, npv: 0.7344, auc: 0.6913
+INFO:root:[validation] The current loss: 0.22131903, acc*auc: 0.4734
+INFO:root:trigger times: 2
+INFO:root:[4/5][33/100] loss: 0.024517183
+INFO:root:acc: 0.6522, tpr: 0.3333, tnr: 0.8305, ppv: 0.5238, npv: 0.6901, auc: 0.7329
+INFO:root:[validation] The current loss: 0.21302373, acc*auc: 0.478
+INFO:root:[4/5][34/100] loss: 0.024814706
+INFO:root:acc: 0.6848, tpr: 0.4242, tnr: 0.8305, ppv: 0.5833, npv: 0.7206, auc: 0.6708
+INFO:root:[validation] The current loss: 0.23796107, acc*auc: 0.4593
+INFO:root:trigger times: 1
+INFO:root:[4/5][35/100] loss: 0.024557808
+INFO:root:acc: 0.5761, tpr: 0.7879, tnr: 0.4576, ppv: 0.4483, npv: 0.7941, auc: 0.7011
+INFO:root:[validation] The current loss: 0.21926354, acc*auc: 0.4039
+INFO:root:[4/5][36/100] loss: 0.023758759
+INFO:root:acc: 0.4783, tpr: 0.9091, tnr: 0.2373, ppv: 0.4, npv: 0.8235, auc: 0.7078
+INFO:root:[validation] The current loss: 0.2308523, acc*auc: 0.3385
+INFO:root:trigger times: 1
+INFO:root:[4/5][37/100] loss: 0.02362326
+INFO:root:acc: 0.6848, tpr: 0.5758, tnr: 0.7458, ppv: 0.5588, npv: 0.7586, auc: 0.7242
+INFO:root:[validation] The current loss: 0.21206448, acc*auc: 0.4959
+INFO:root:[4/5][38/100] loss: 0.023088795
+INFO:root:acc: 0.663, tpr: 0.8788, tnr: 0.5424, ppv: 0.5179, npv: 0.8889, auc: 0.7283
+INFO:root:[validation] The current loss: 0.21497529, acc*auc: 0.4829
+INFO:root:trigger times: 1
+INFO:root:[4/5][39/100] loss: 0.023075646
+INFO:root:acc: 0.4022, tpr: 1.0, tnr: 0.0678, ppv: 0.375, npv: 1.0, auc: 0.6985
+INFO:root:[validation] The current loss: 0.27273698, acc*auc: 0.2809
+INFO:root:trigger times: 2
+INFO:root:[4/5][40/100] loss: 0.022757839
+INFO:root:acc: 0.6739, tpr: 0.5152, tnr: 0.7627, ppv: 0.5484, npv: 0.7377, auc: 0.7057
+INFO:root:[validation] The current loss: 0.21596434, acc*auc: 0.4756
+INFO:root:[4/5][41/100] loss: 0.021815885
+INFO:root:acc: 0.6196, tpr: 0.7879, tnr: 0.5254, ppv: 0.4815, npv: 0.8158, auc: 0.7227
+INFO:root:[validation] The current loss: 0.21346165, acc*auc: 0.4477
+INFO:root:[4/5][42/100] loss: 0.021599839
+INFO:root:acc: 0.6739, tpr: 0.3333, tnr: 0.8644, ppv: 0.5789, npv: 0.6986, auc: 0.7643
+INFO:root:[validation] The current loss: 0.21462602, acc*auc: 0.515
+INFO:root:trigger times: 1
+INFO:root:Recording best auc model. (model/under-sampling/auc)
+INFO:root:[4/5][43/100] loss: 0.021205789
+INFO:root:acc: 0.5543, tpr: 0.8788, tnr: 0.3729, ppv: 0.4394, npv: 0.8462, auc: 0.6739
+INFO:root:[validation] The current loss: 0.23043165, acc*auc: 0.3736
+INFO:root:trigger times: 2
+INFO:root:[4/5][44/100] loss: 0.020285854
+INFO:root:acc: 0.6522, tpr: 0.4848, tnr: 0.7458, ppv: 0.5161, npv: 0.7213, auc: 0.7083
+INFO:root:[validation] The current loss: 0.21682501, acc*auc: 0.4619
+INFO:root:[4/5][45/100] loss: 0.020298418
+INFO:root:acc: 0.5652, tpr: 0.8485, tnr: 0.4068, ppv: 0.4444, npv: 0.8276, auc: 0.6574
+INFO:root:[validation] The current loss: 0.23381407, acc*auc: 0.3716
+INFO:root:trigger times: 1
+INFO:root:[4/5][46/100] loss: 0.019833227
+INFO:root:acc: 0.6739, tpr: 0.7879, tnr: 0.6102, ppv: 0.5306, npv: 0.8372, auc: 0.7283
+INFO:root:[validation] The current loss: 0.2120124, acc*auc: 0.4908
+INFO:root:[4/5][47/100] loss: 0.019653213
+INFO:root:acc: 0.6304, tpr: 0.2727, tnr: 0.8305, ppv: 0.4737, npv: 0.6712, auc: 0.7252
+INFO:root:[validation] The current loss: 0.21739547, acc*auc: 0.4572
+INFO:root:trigger times: 1
+INFO:root:[4/5][48/100] loss: 0.020051647
+INFO:root:acc: 0.663, tpr: 0.6061, tnr: 0.6949, ppv: 0.5263, npv: 0.7593, auc: 0.7191
+INFO:root:[validation] The current loss: 0.21090753, acc*auc: 0.4768
+INFO:root:[4/5][49/100] loss: 0.0196883
+INFO:root:acc: 0.663, tpr: 0.6061, tnr: 0.6949, ppv: 0.5263, npv: 0.7593, auc: 0.7232
+INFO:root:[validation] The current loss: 0.21076391, acc*auc: 0.4795
+INFO:root:[4/5][50/100] loss: 0.019130649
+INFO:root:acc: 0.6739, tpr: 0.6364, tnr: 0.6949, ppv: 0.5385, npv: 0.7736, auc: 0.7242
+INFO:root:[validation] The current loss: 0.20912773, acc*auc: 0.488
+INFO:root:[4/5][51/100] loss: 0.019408589
+INFO:root:acc: 0.6304, tpr: 0.5152, tnr: 0.6949, ppv: 0.4857, npv: 0.7193, auc: 0.7206
+INFO:root:[validation] The current loss: 0.21143027, acc*auc: 0.4543
+INFO:root:trigger times: 1
+INFO:root:[4/5][52/100] loss: 0.019264793
+INFO:root:acc: 0.663, tpr: 0.5152, tnr: 0.7458, ppv: 0.5312, npv: 0.7333, auc: 0.7262
+INFO:root:[validation] The current loss: 0.20924737, acc*auc: 0.4815
+INFO:root:[4/5][53/100] loss: 0.018971035
+INFO:root:acc: 0.6739, tpr: 0.6364, tnr: 0.6949, ppv: 0.5385, npv: 0.7736, auc: 0.7103
+INFO:root:[validation] The current loss: 0.21572038, acc*auc: 0.4787
+INFO:root:trigger times: 1
+INFO:root:[4/5][54/100] loss: 0.01922604
+INFO:root:acc: 0.6739, tpr: 0.7879, tnr: 0.6102, ppv: 0.5306, npv: 0.8372, auc: 0.7196
+INFO:root:[validation] The current loss: 0.21267776, acc*auc: 0.4849
+INFO:root:[4/5][55/100] loss: 0.019791325
+INFO:root:acc: 0.6196, tpr: 0.4242, tnr: 0.7288, ppv: 0.4667, npv: 0.6935, auc: 0.7016
+INFO:root:[validation] The current loss: 0.21901679, acc*auc: 0.4347
+INFO:root:trigger times: 1
+INFO:root:[4/5][56/100] loss: 0.01960326
+INFO:root:acc: 0.6304, tpr: 0.4545, tnr: 0.7288, ppv: 0.4839, npv: 0.7049, auc: 0.697
+INFO:root:[validation] The current loss: 0.21988989, acc*auc: 0.4394
+INFO:root:trigger times: 2
+INFO:root:[4/5][57/100] loss: 0.019482988
+INFO:root:acc: 0.6196, tpr: 0.3636, tnr: 0.7627, ppv: 0.4615, npv: 0.6818, auc: 0.7083
+INFO:root:[validation] The current loss: 0.2345481, acc*auc: 0.4388
+INFO:root:trigger times: 3
+INFO:root:[4/5][58/100] loss: 0.019423211
+INFO:root:acc: 0.4783, tpr: 0.9697, tnr: 0.2034, ppv: 0.4051, npv: 0.9231, auc: 0.6323
+INFO:root:[validation] The current loss: 0.27491763, acc*auc: 0.3024
+INFO:root:trigger times: 4
+INFO:root:[4/5][59/100] loss: 0.020888605
+INFO:root:acc: 0.663, tpr: 0.7879, tnr: 0.5932, ppv: 0.52, npv: 0.8333, auc: 0.7103
+INFO:root:[validation] The current loss: 0.22454617, acc*auc: 0.471
