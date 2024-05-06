@@ -1,0 +1,13 @@
+name: 2_woDS
+arch: NestedUNet
+deepsupervision: False
+input_channels: 1
+aug: True
+loss: BCEDiceLoss
+epochs: 60
+batch_size: 8
+optimizer: Adam
+lr: 0.0001
+momentum: 0.9
+weight_decay: 1e-05
+nesterov: False
