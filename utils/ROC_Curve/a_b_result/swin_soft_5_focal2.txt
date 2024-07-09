@@ -1,0 +1,101 @@
+   method 1   
+                                                            Date - 29-Jun-23
+                                                             Time - 16:49:06
+
+
+      ROCKIT (Windows95 version 0.9.1 BETA):                      
+          method 1                                                    
+
+             Maximum Likelihood Estimation of the Parameters
+                      a Single Binormal ROC Curve
+
+      Name of Input File being used: model_store_swin_pre
+
+
+
+      Condition 1: method 1    
+
+      Total number of actually-negative cases =  147.
+      Total number of actually-positive cases =  187.
+
+      Data collected on a nominally continuous scale.
+      Larger values of the test result represent stronger evidence that the
+      case is actually-positive (e.g., that the patient is actually abnormal)
+
+
+    Operating Points Corresponding to the Input Data Categorized by the LABROC5 Scheme:
+
+    FPF:  .000  .034  .061  .088  .116  .122  .136  .156  .170  .177  .197
+    TPF:  .000  .166  .305  .396  .471  .561  .615  .647  .701  .759  .824
+
+    FPF:  .211  .259  .299  .347  .395  .469  .544  .646  .810 1.000
+    TPF:  .834  .861  .888  .904  .920  .930  .957  .973  .984 1.000
+
+
+
+             -----------------------------------------------------
+               Initial Estimates of the Binormal ROC Parameters: 
+             -----------------------------------------------------
+
+                  a =  1.5968
+                  b =  1.1998
+
+      z(k) =   .783   .347   .108  -.086  -.217  -.317  -.414  -.520  -.629  -.665
+              -.804  -.911 -1.014 -1.090 -1.192 -1.347 -1.510 -1.719 -2.092
+
+                Procedure Converges after   6 Iterations
+
+
+               =====================================================
+                  Final Estimates of the Binormal ROC Parameters    
+               =====================================================
+
+
+ Binormal Parameters and Area Under the Estimated ROC :
+        a           =        1.6180
+        b           =        1.2545
+        Area (Az)   =         .8434
+        Area (Wilc) =         .8437
+
+     1: z(k) =  -.809  -.372  -.131   .056   .197   .302   .405   .514   .631   .669
+                 .807   .911  1.010  1.083  1.182  1.329  1.482  1.679  2.033
+
+ Estimated Standard Errors and Correlation of these Values:
+        Std. Err. (a)  =      .1697
+        Std. Err. (b)  =      .1391
+        Corr(a,b)      =      .5321
+        Std. Err. (Az) =      .0217
+        Std. Err.(Wilc)=      .0211
+
+ Symmetric 95% Confidence Intervals
+        For a :        ( 1.2854, 1.9506)
+        For b :        (  .9819, 1.5271)
+
+ Asymmetric 95% Confidence Interval
+        For Az:        (  .7971,  .8821)
+
+        Estimated Binormal ROC curve, with Lower and Upper
+        Bounds of the Asymmetric Point-wise 95% Confidence
+        Interval for True-Positive Fraction at a Variety
+        of False-Positive Fractions:
+
+
+            FPF      TPF        (Lower Bound, Upper Bound)
+
+            .005     .0533       (    .0136  ,    .1544   )
+            .010     .0966       (    .0330  ,    .2224   )
+            .020     .1688       (    .0757  ,    .3143   )
+            .030     .2290       (    .1189  ,    .3807   )
+            .040     .2814       (    .1610  ,    .4337   )
+            .050     .3278       (    .2013  ,    .4782   )
+            .060     .3696       (    .2396  ,    .5166   )
+            .070     .4076       (    .2761  ,    .5505   )
+            .080     .4424       (    .3107  ,    .5808   )
+            .090     .4744       (    .3434  ,    .6082   )
+            .100     .5040       (    .3744  ,    .6332   )
+            .110     .5315       (    .4038  ,    .6561   )
+            .120     .5572       (    .4316  ,    .6772   )
+            .130     .5811       (    .4580  ,    .6967   )
+            .140     .6036       (    .4831  ,    .7149   )
+            .150     .6247       (    .5068  ,    .7319   )
+            .200     .7131       (    .6087  ,    .80

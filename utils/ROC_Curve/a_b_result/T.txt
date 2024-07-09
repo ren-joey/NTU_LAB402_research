@@ -1,0 +1,101 @@
+   method 1   
+                                                            Date - 29-Jun-23
+                                                             Time - 16:40:31
+
+
+      ROCKIT (Windows95 version 0.9.1 BETA):                      
+          method 1                                                    
+
+             Maximum Likelihood Estimation of the Parameters
+                      a Single Binormal ROC Curve
+
+      Name of Input File being used: model_store_malignan
+
+
+
+      Condition 1: method 1    
+
+      Total number of actually-negative cases =  147.
+      Total number of actually-positive cases =  187.
+
+      Data collected on a nominally continuous scale.
+      Larger values of the test result represent stronger evidence that the
+      case is actually-positive (e.g., that the patient is actually abnormal)
+
+
+    Operating Points Corresponding to the Input Data Categorized by the LABROC5 Scheme:
+
+    FPF:  .000  .020  .088  .116  .136  .156  .190  .190  .204  .211  .231
+    TPF:  .000  .171  .289  .374  .439  .492  .529  .642  .684  .727  .775
+
+    FPF:  .286  .306  .340  .381  .422  .476  .558  .660  .830 1.000
+    TPF:  .786  .807  .850  .877  .909  .930  .947  .968  .973 1.000
+
+
+
+             -----------------------------------------------------
+               Initial Estimates of the Binormal ROC Parameters: 
+             -----------------------------------------------------
+
+                  a =  1.3511
+                  b =  1.1638
+
+      z(k) =   .819   .418   .176   .015  -.109  -.230  -.333  -.452  -.514  -.594
+              -.698  -.775  -.857 -1.031 -1.132 -1.243 -1.377 -1.574 -1.986
+
+                Procedure Converges after   5 Iterations
+
+
+               =====================================================
+                  Final Estimates of the Binormal ROC Parameters    
+               =====================================================
+
+
+ Binormal Parameters and Area Under the Estimated ROC :
+        a           =        1.3345
+        b           =        1.1730
+        Area (Az)   =         .8067
+        Area (Wilc) =         .8062
+
+     1: z(k) =  -.874  -.448  -.200  -.026   .104   .225   .331   .449   .511   .599
+                 .704   .780   .863  1.031  1.127  1.236  1.366  1.556  1.953
+
+ Estimated Standard Errors and Correlation of these Values:
+        Std. Err. (a)  =      .1497
+        Std. Err. (b)  =      .1226
+        Corr(a,b)      =      .4530
+        Std. Err. (Az) =      .0239
+        Std. Err.(Wilc)=      .0234
+
+ Symmetric 95% Confidence Intervals
+        For a :        ( 1.0410, 1.6279)
+        For b :        (  .9326, 1.4134)
+
+ Asymmetric 95% Confidence Interval
+        For Az:        (  .7565,  .8500)
+
+        Estimated Binormal ROC curve, with Lower and Upper
+        Bounds of the Asymmetric Point-wise 95% Confidence
+        Interval for True-Positive Fraction at a Variety
+        of False-Positive Fractions:
+
+
+            FPF      TPF        (Lower Bound, Upper Bound)
+
+            .005     .0458       (    .0126  ,    .1281   )
+            .010     .0815       (    .0290  ,    .1855   )
+            .020     .1412       (    .0642  ,    .2645   )
+            .030     .1916       (    .0994  ,    .3229   )
+            .040     .2359       (    .1338  ,    .3705   )
+            .050     .2758       (    .1670  ,    .4111   )
+            .060     .3122       (    .1990  ,    .4467   )
+            .070     .3457       (    .2297  ,    .4785   )
+            .080     .3768       (    .2591  ,    .5073   )
+            .090     .4058       (    .2873  ,    .5337   )
+            .100     .4329       (    .3143  ,    .5580   )
+            .110     .4584       (    .3401  ,    .5805   )
+            .120     .4825       (    .3650  ,    .6016   )
+            .130     .5052       (    .3888  ,    .6213   )
+            .140     .5268       (    .4116  ,    .6398   )
+            .150     .5473       (    .4335  ,    .6572   )
+            .200     .6359       (    .5306  ,    .73

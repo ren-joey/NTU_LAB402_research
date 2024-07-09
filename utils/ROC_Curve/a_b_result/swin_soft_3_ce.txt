@@ -1,0 +1,147 @@
+   method 1   
+                                                            Date - 29-Jun-23
+                                                             Time - 16:53:39
+
+
+      ROCKIT (Windows95 version 0.9.1 BETA):                      
+          method 1                                                    
+
+             Maximum Likelihood Estimation of the Parameters
+                      a Single Binormal ROC Curve
+
+      Name of Input File being used: model_store_swin_pre
+
+
+
+      Condition 1: method 1    
+
+      Total number of actually-negative cases =  147.
+      Total number of actually-positive cases =  187.
+
+      Data collected on a nominally continuous scale.
+      Larger values of the test result represent stronger evidence that the
+      case is actually-positive (e.g., that the patient is actually abnormal)
+
+
+    Operating Points Corresponding to the Input Data Categorized by the LABROC5 Scheme:
+
+    FPF:  .000  .034  .054  .088  .102  .122  .136  .143  .163  .184  .218
+    TPF:  .000  .176  .369  .406  .503  .551  .604  .668  .717  .754  .786
+
+    FPF:  .245  .265  .313  .347  .415  .469  .531  .639  .830 1.000
+    TPF:  .813  .861  .877  .909  .925  .952  .963  .979  .989 1.000
+
+
+
+             -----------------------------------------------------
+               Initial Estimates of the Binormal ROC Parameters: 
+             -----------------------------------------------------
+
+                  a =  1.6289
+                  b =  1.2083
+
+      z(k) =   .882   .349   .094  -.035  -.187  -.317  -.432  -.524  -.642  -.723
+              -.819  -.906 -1.009 -1.121 -1.223 -1.326 -1.504 -1.621 -2.074
+
+                Procedure Converges after   5 Iterations
+
+
+               =====================================================
+                  Final Estimates of the Binormal ROC Parameters    
+               =====================================================
+
+
+ Binormal Parameters and Area Under the Estimated ROC :
+        a           =        1.6681
+        b           =        1.2659
+        Area (Az)   =         .8494
+        Area (Wilc) =         .8511
+
+     1: z(k) =  -.901  -.363  -.102   .034   .183   .322   .434   .532   .645   .725
+                 .822   .908  1.010  1.117  1.214  1.312  1.482  1.590  2.025
+
+ Estimated Standard Errors and Correlation of these Values:
+        Std. Err. (a)  =      .1736
+        Std. Err. (b)  =      .1425
+        Corr(a,b)      =      .5454
+        Std. Err. (Az) =      .0213
+        Std. Err.(Wilc)=      .0206
+
+ Symmetric 95% Confidence Intervals
+        For a :        ( 1.3279, 2.0083)
+        For b :        (  .9866, 1.5451)
+
+ Asymmetric 95% Confidence Interval
+        For Az:        (  .8039,  .8874)
+
+        Estimated Binormal ROC curve, with Lower and Upper
+        Bounds of the Asymmetric Point-wise 95% Confidence
+        Interval for True-Positive Fraction at a Variety
+        of False-Positive Fractions:
+
+
+            FPF      TPF        (Lower Bound, Upper Bound)
+
+            .005     .0556       (    .0140  ,    .1616   )
+            .010     .1007       (    .0342  ,    .2319   )
+            .020     .1756       (    .0787  ,    .3261   )
+            .030     .2378       (    .1237  ,    .3937   )
+            .040     .2917       (    .1673  ,    .4474   )
+            .050     .3392       (    .2090  ,    .4923   )
+            .060     .3819       (    .2486  ,    .5310   )
+            .070     .4206       (    .2862  ,    .5651   )
+            .080     .4559       (    .3216  ,    .5954   )
+            .090     .4883       (    .3552  ,    .6227   )
+            .100     .5182       (    .3868  ,    .6476   )
+            .110     .5459       (    .4168  ,    .6703   )
+            .120     .5717       (    .4450  ,    .6912   )
+            .130     .5957       (    .4718  ,    .7106   )
+            .140     .6181       (    .4971  ,    .7285   )
+            .150     .6391       (    .5210  ,    .7452   )
+            .200     .7267       (    .6231  ,    .8139   )
+            .250     .7924       (    .7018  ,    .8643   )
+            .300     .8425       (    .7633  ,    .9019   )
+            .400     .9112       (    .8509  ,    .9511   )
+            .500     .9524       (    .9079  ,    .9777   )
+            .600     .9766       (    .9458  ,    .9911   )
+            .700     .9901       (    .9709  ,    .9972   )
+            .800     .9969       (    .9870  ,    .9994   )
+            .900     .9995       (    .9963  ,   1.0000   )
+            .950     .9999       (    .9988  ,   1.0000   )
+
+
+      Estimated Relationship between the Critical Test-Result Value
+      (which separates 'positive' results form 'negative' results)
+      and the Corresponding Operating Point on the Fitted Binormal
+      ROC Curve:
+
+ ***********************************************************************
+
+          Critical Test           (  FPF ,   TPF )
+          Result Value
+
+
+                .9998516          (  .021,   .185)
+                .9992278          (  .056,   .365)
+                .9988306          (  .069,   .418)
+                .9967968          (  .095,   .503)
+                .9947333          (  .112,   .552)
+                .9873491          (  .132,   .600)
+                .9725636          (  .156,   .652)
+                .9095042          (  .182,   .698)
+                .8574297          (  .206,   .735)
+                .6599588          (  .234,   .773)
+                .4247783          (  .259,   .803)
+                .2877948          (  .297,   .840)
+                .1533959          (  .332,   .868)
+                .0617709          (  .374,   .896)
+                .0263770          (  .428,   .925)
+                .0123086          (  .486,   .948)
+                .0063520          (  .541,   .964)
+                .0022575          (  .642,   .983)
+                .0003806          (  .816,   .998)
+
+
+
+                                                            Date - 29-Jun-23
+                                                             Time - 16:53:40
