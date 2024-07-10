@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import numpy as np
 np.set_printoptions(suppress=True)
-files = list(os.listdir(r"D:\Users\tsuyi\Desktop\NTU_LAB402_research_code\utils\ROC_Curve\data"))
+files = list(os.listdir(r".\utils\ROC_Curve\data"))
 
 for file in files:
     print(file)
@@ -11,7 +11,7 @@ for file in files:
     mali_indexes = []
     benign_indexes = []
 
-    data = pd.read_csv(os.path.join(r"D:\Users\tsuyi\Desktop\NTU_LAB402_research_code\utils\ROC_Curve\data",file))
+    data = pd.read_csv(os.path.join(r".\utils\ROC_Curve\data",file))
 
     for ind, value in enumerate(data['label']):
         if value == 1:
@@ -24,7 +24,7 @@ for file in files:
     mal_val = list(data['prob'][mali_indexes])
 
     path = file + '.txt'
-    f = open(os.path.join(r"D:\Users\tsuyi\Desktop\NTU_LAB402_research_code\utils\ROC_Curve\txt", path), 'w')
+    f = open(os.path.join(r".\utils\ROC_Curve\txt", path), 'w')
     f.write('method 1'+'\n')
     f.write('Large'+'\n'+'\n')
     for ben in ben_val:

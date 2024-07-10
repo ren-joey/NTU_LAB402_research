@@ -4,12 +4,11 @@ from mlxtend.evaluate import mcnemar
 from mlxtend.evaluate import mcnemar_table
 from Delong import *
 
-target_csv =pd.read_csv(r"D:\Users\tsuyi\Desktop\NTU_LAB402_research_code\utils\p_value\data\90d_DualWay.csv")
+target_csv =pd.read_csv(r".\utils\p_value\data\42d_DualWay.csv")
 label=np.array(target_csv['label'])
 y_target=np.array(target_csv['prob'])
 
-
-compare_csv=pd.read_csv(r"D:\Users\tsuyi\Desktop\NTU_LAB402_research_code\utils\p_value\data\Kaplan-Meier-90.csv")
+compare_csv=pd.read_csv(r".\utils\p_value\data\42d_collection-hazard.csv")
 y_cmp=np.array(compare_csv['prob'])
 label2 = np.array(compare_csv['label'])
 
